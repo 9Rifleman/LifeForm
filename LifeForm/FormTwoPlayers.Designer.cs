@@ -105,7 +105,7 @@
             this.lblPlayerTwoTotals.Name = "lblPlayerTwoTotals";
             this.lblPlayerTwoTotals.Size = new System.Drawing.Size(192, 97);
             this.lblPlayerTwoTotals.TabIndex = 0;
-            this.lblPlayerTwoTotals.Text = "999";
+            this.lblPlayerTwoTotals.Text = "20";
             this.lblPlayerTwoTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
@@ -209,7 +209,7 @@
             this.lblPlayerOneTotals.Name = "lblPlayerOneTotals";
             this.lblPlayerOneTotals.Size = new System.Drawing.Size(192, 83);
             this.lblPlayerOneTotals.TabIndex = 0;
-            this.lblPlayerOneTotals.Text = "999";
+            this.lblPlayerOneTotals.Text = "20";
             this.lblPlayerOneTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormTwoPlayers

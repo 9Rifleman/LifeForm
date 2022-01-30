@@ -71,6 +71,15 @@ namespace LifeForm.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream BlackFX {
+            get {
+                return ResourceManager.GetStream("BlackFX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap BlackTheme {
@@ -87,6 +96,15 @@ namespace LifeForm.Properties {
             get {
                 object obj = ResourceManager.GetObject("Blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream BlueFX {
+            get {
+                return ResourceManager.GetStream("BlueFX", resourceCulture);
             }
         }
         
@@ -111,6 +129,15 @@ namespace LifeForm.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream GreenFX {
+            get {
+                return ResourceManager.GetStream("GreenFX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap GreenTheme {
@@ -131,6 +158,15 @@ namespace LifeForm.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream RedFX {
+            get {
+                return ResourceManager.GetStream("RedFX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap RedTheme {
@@ -147,6 +183,15 @@ namespace LifeForm.Properties {
             get {
                 object obj = ResourceManager.GetObject("White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream WhiteFX {
+            get {
+                return ResourceManager.GetStream("WhiteFX", resourceCulture);
             }
         }
         
