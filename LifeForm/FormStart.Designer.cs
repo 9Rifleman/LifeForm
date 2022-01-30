@@ -35,7 +35,7 @@
             // btnTwoPlayers
             // 
             this.btnTwoPlayers.BackColor = System.Drawing.SystemColors.Control;
-            this.btnTwoPlayers.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTwoPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTwoPlayers.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnTwoPlayers.Location = new System.Drawing.Point(12, 12);
             this.btnTwoPlayers.Name = "btnTwoPlayers";
@@ -48,7 +48,7 @@
             // btnFourPlayers
             // 
             this.btnFourPlayers.BackColor = System.Drawing.SystemColors.Control;
-            this.btnFourPlayers.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnFourPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnFourPlayers.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnFourPlayers.Location = new System.Drawing.Point(160, 12);
             this.btnFourPlayers.Name = "btnFourPlayers";

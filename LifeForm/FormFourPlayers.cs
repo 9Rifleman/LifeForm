@@ -42,11 +42,11 @@ namespace LifeForm
                     break;
 
                 case 3:
-                    pnlPlayerOne.BackColor = Color.Red;
+                    pnlPlayerOne.BackColor = Color.Tomato;
                     break;
 
                 case 4:
-                    pnlPlayerOne.BackColor = Color.Green;
+                    pnlPlayerOne.BackColor = Color.ForestGreen;
                     break;
 
             }
@@ -66,11 +66,11 @@ namespace LifeForm
                     break;
 
                 case 3:
-                    pnlPlayerTwo.BackColor = Color.Red;
+                    pnlPlayerTwo.BackColor = Color.Tomato;
                     break;
 
                 case 4:
-                    pnlPlayerTwo.BackColor = Color.Green;
+                    pnlPlayerTwo.BackColor = Color.ForestGreen;
                     break;
 
             }
@@ -90,11 +90,11 @@ namespace LifeForm
                     break;
 
                 case 3:
-                    pnlPlayerThree.BackColor = Color.Red;
+                    pnlPlayerThree.BackColor = Color.Tomato;
                     break;
 
                 case 4:
-                    pnlPlayerThree.BackColor = Color.Green;
+                    pnlPlayerThree.BackColor = Color.ForestGreen;
                     break;
 
             }
@@ -114,11 +114,11 @@ namespace LifeForm
                     break;
 
                 case 3:
-                    pnlPlayerFour.BackColor = Color.Red;
+                    pnlPlayerFour.BackColor = Color.Tomato;
                     break;
 
                 case 4:
-                    pnlPlayerFour.BackColor = Color.Green;
+                    pnlPlayerFour.BackColor = Color.ForestGreen;
                     break;
 
             }

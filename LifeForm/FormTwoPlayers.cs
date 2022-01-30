@@ -28,22 +28,28 @@ namespace LifeForm
             {
                 case 0:
                     pnlPlayerOne.BackColor = Color.Ivory;
+                    pnlPlayerOne.BackgroundImage = Properties.Resources.WhiteTheme;
                     break;
 
                 case 1:
                     pnlPlayerOne.BackColor = Color.Black;
+                    pnlPlayerOne.BackgroundImage = Properties.Resources.BlackTheme;
+                    lblPlayerOneTotals.ForeColor = Color.White;
                     break;
 
                 case 2:
                     pnlPlayerOne.BackColor = Color.CornflowerBlue;
+                    pnlPlayerOne.BackgroundImage = Properties.Resources.BlueTheme;
                     break;
                 
                 case 3:
-                    pnlPlayerOne.BackColor = Color.Red;
+                    pnlPlayerOne.BackColor = Color.Tomato;
+                    pnlPlayerOne.BackgroundImage = Properties.Resources.RedTheme;
                     break;
 
                 case 4:
-                    pnlPlayerOne.BackColor= Color.Green;
+                    pnlPlayerOne.BackColor= Color.ForestGreen;
+                    pnlPlayerOne.BackgroundImage = Properties.Resources.GreenTheme;
                     break;
 
             }
@@ -52,22 +58,28 @@ namespace LifeForm
             {
                 case 0:
                     pnlPlayerTwo.BackColor = Color.Ivory;
+                    pnlPlayerTwo.BackgroundImage = Properties.Resources.WhiteTheme;
                     break;
 
                 case 1:
                     pnlPlayerTwo.BackColor = Color.Black;
+                    pnlPlayerTwo.BackgroundImage = Properties.Resources.BlackTheme;
+                    lblPlayerTwoTotals.ForeColor = Color.White;
                     break;
 
                 case 2:
                     pnlPlayerTwo.BackColor = Color.CornflowerBlue;
+                    pnlPlayerTwo.BackgroundImage = Properties.Resources.BlueTheme;
                     break;
 
                 case 3:
-                    pnlPlayerTwo.BackColor = Color.Red;
+                    pnlPlayerTwo.BackColor = Color.Tomato;
+                    pnlPlayerTwo.BackgroundImage = Properties.Resources.RedTheme;
                     break;
 
                 case 4:
-                    pnlPlayerTwo.BackColor = Color.Green;
+                    pnlPlayerTwo.BackColor = Color.ForestGreen;
+                    pnlPlayerTwo.BackgroundImage = Properties.Resources.GreenTheme;
                     break;
 
             }
@@ -76,5 +88,7 @@ namespace LifeForm
         {
             TwoPlayerSetup();
         }
+
+
     }
 }
