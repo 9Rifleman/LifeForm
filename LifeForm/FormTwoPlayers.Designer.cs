@@ -34,8 +34,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.lblPlayerTwoTotals = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnPlayerTwoMinus = new System.Windows.Forms.Button();
+            this.btnPlayerTwoPlus = new System.Windows.Forms.Button();
             this.pnlPlayerOne = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPlayerOnePoison = new System.Windows.Forms.Button();
@@ -81,8 +81,8 @@
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.lblPlayerTwoTotals);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnPlayerTwoMinus);
+            this.panel2.Controls.Add(this.btnPlayerTwoPlus);
             this.panel2.Location = new System.Drawing.Point(18, 16);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 200);
@@ -118,25 +118,25 @@
             this.button2.Text = "Life";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnPlayerTwoMinus
             // 
-            this.button3.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(102, 98);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 60);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPlayerTwoMinus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerTwoMinus.Location = new System.Drawing.Point(102, 98);
+            this.btnPlayerTwoMinus.Name = "btnPlayerTwoMinus";
+            this.btnPlayerTwoMinus.Size = new System.Drawing.Size(60, 60);
+            this.btnPlayerTwoMinus.TabIndex = 6;
+            this.btnPlayerTwoMinus.Text = "-";
+            this.btnPlayerTwoMinus.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnPlayerTwoPlus
             // 
-            this.button4.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(36, 98);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 60);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnPlayerTwoPlus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerTwoPlus.Location = new System.Drawing.Point(36, 98);
+            this.btnPlayerTwoPlus.Name = "btnPlayerTwoPlus";
+            this.btnPlayerTwoPlus.Size = new System.Drawing.Size(60, 60);
+            this.btnPlayerTwoPlus.TabIndex = 5;
+            this.btnPlayerTwoPlus.Text = "+";
+            this.btnPlayerTwoPlus.UseVisualStyleBackColor = true;
             // 
             // pnlPlayerOne
             // 
@@ -221,6 +221,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormTwoPlayers";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Two players";
             this.TopMost = true;
@@ -249,7 +250,7 @@
         private Button btnPlayerOnePlus;
         private Button button1;
         private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnPlayerTwoMinus;
+        private Button btnPlayerTwoPlus;
     }
 }
