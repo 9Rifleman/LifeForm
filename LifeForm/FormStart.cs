@@ -46,15 +46,17 @@ namespace LifeForm
         {
             PlayerNumber = 2;
             PlayerThemeSelect();
-            FormTwoPlayers formTwoPlayers = new FormTwoPlayers();
+            FormTwoPlayers formTwoPlayers = new FormTwoPlayers(PlayerOneTheme, PlayerTwoTheme);
             formTwoPlayers.ShowDialog();
             //this.Close();
         }
 
         private void btnFourPlayers_Click(object sender, EventArgs e)
         {
-            FormThemePick fourPlayers = new FormThemePick();
-            fourPlayers.ShowDialog();
+            PlayerNumber = 4;
+            PlayerThemeSelect();
+            FormFourPlayers formFourPlayers = new FormFourPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerFourTheme);
+            formFourPlayers.ShowDialog();
         }
     }
 }

@@ -38,7 +38,7 @@
             // btnWhite
             // 
             this.btnWhite.AutoSize = true;
-            this.btnWhite.BackColor = System.Drawing.Color.White;
+            this.btnWhite.BackColor = System.Drawing.Color.Ivory;
             this.btnWhite.BackgroundImage = global::LifeForm.Properties.Resources.White;
             this.btnWhite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWhite.Location = new System.Drawing.Point(0, 0);

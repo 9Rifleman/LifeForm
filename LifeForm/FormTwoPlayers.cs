@@ -12,19 +12,22 @@ namespace LifeForm
 {
     public partial class FormTwoPlayers : Form
     {
-        public FormTwoPlayers()
+        private int playerOneTheme;
+        private int playerTwoTheme;
+
+        public FormTwoPlayers(int playerOneTheme, int playerTwoTheme)
         {
+            this.playerOneTheme = playerOneTheme;
+            this.playerTwoTheme = playerTwoTheme;
             InitializeComponent();
         }
 
         private void TwoPlayerSetup()
         {
-            FormStart formStart = new();
-            int a = formStart.PlayerOneTheme;
-            switch(a)
+            switch(playerOneTheme)
             {
                 case 0:
-                    pnlPlayerOne.BackColor = Color.White;
+                    pnlPlayerOne.BackColor = Color.Ivory;
                     break;
 
                 case 1:
@@ -32,7 +35,39 @@ namespace LifeForm
                     break;
 
                 case 2:
-                    pnlPlayerOne.BackColor = Color.Blue;
+                    pnlPlayerOne.BackColor = Color.CornflowerBlue;
+                    break;
+                
+                case 3:
+                    pnlPlayerOne.BackColor = Color.Red;
+                    break;
+
+                case 4:
+                    pnlPlayerOne.BackColor= Color.Green;
+                    break;
+
+            }
+
+            switch(playerTwoTheme)
+            {
+                case 0:
+                    pnlPlayerTwo.BackColor = Color.Ivory;
+                    break;
+
+                case 1:
+                    pnlPlayerTwo.BackColor = Color.Black;
+                    break;
+
+                case 2:
+                    pnlPlayerTwo.BackColor = Color.CornflowerBlue;
+                    break;
+
+                case 3:
+                    pnlPlayerTwo.BackColor = Color.Red;
+                    break;
+
+                case 4:
+                    pnlPlayerTwo.BackColor = Color.Green;
                     break;
 
             }
