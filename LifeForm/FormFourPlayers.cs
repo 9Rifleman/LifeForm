@@ -16,6 +16,21 @@ namespace LifeForm
         private int playerTwoTheme;
         private int playerThreeTheme;
         private int playerFourTheme;
+
+        private int PlayerOneLifeTotal;
+        private int PlayerTwoLifeTotal;
+        private int PlayerThreeLifeTotal;
+        private int PlayerFourLifeTotal;
+
+        private int PlayerOnePoisonTotal = 0;
+        private int PlayerTwoPoisonTotal = 0;
+        private int PlayerThreePoisonTotal = 0;
+        private int PlayerFourPoisonTotal = 0;
+
+        private bool PlayerOneLifeToggled = true;
+        private bool PlayerTwoLifeToggled = true;
+        private bool PlayerThreeLifeToggled = true;
+        private bool PlayerFourLifeToggled = true;
         public FormFourPlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme, int playerFourTheme)
         {
             this.playerOneTheme = playerOneTheme;
@@ -25,7 +40,7 @@ namespace LifeForm
             InitializeComponent();
         }
 
-        private void FourPlayerSetup()
+        private void FourPlayerThemeSetup()
         {
             switch (playerOneTheme)
             {
@@ -46,6 +61,9 @@ namespace LifeForm
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     btnPlayerOneMinus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerOneMinus.ForeColor = Color.White;
+                    btnPlayerOneLife.BackColor = Color.Black;
+                    btnPlayerOneLife.ForeColor = Color.White;
+                    btnPlayerOneLife.FlatAppearance.BorderColor = Color.White;
                     break;
 
                 case 2:
@@ -90,6 +108,9 @@ namespace LifeForm
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     btnPlayerTwoMinus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerTwoMinus.ForeColor = Color.White;
+                    btnPlayerTwoLife.BackColor = Color.White;
+                    btnPlayerTwoLife.ForeColor = Color.Black;
+                    btnPlayerTwoLife.FlatAppearance.BorderColor = Color.White;
                     break;
 
                 case 2:
@@ -133,6 +154,9 @@ namespace LifeForm
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     btnPlayerThreeMinus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerThreeMinus.ForeColor = Color.White;
+                    btnPlayerThreeLife.BackColor = Color.White;
+                    btnPlayerThreeLife.ForeColor = Color.Black;
+                    btnPlayerThreeLife.FlatAppearance.BorderColor = Color.White;
                     break;
 
                 case 2:
@@ -177,6 +201,9 @@ namespace LifeForm
                     btnPlayerFourMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     btnPlayerFourMinus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerFourMinus.ForeColor = Color.White;
+                    btnPlayerFourLife.BackColor = Color.Black;
+                    btnPlayerFourLife.ForeColor = Color.White;
+                    btnPlayerFourLife.FlatAppearance.BorderColor = Color.White;
                     break;
 
                 case 2:
@@ -203,9 +230,264 @@ namespace LifeForm
             }
         }
 
+        private void FourPlayerGameSetup()
+        {
+            PlayerOneLifeTotal = 20;
+            PlayerTwoLifeTotal = 20;
+            PlayerThreeLifeTotal = 20;
+            PlayerFourLifeTotal = 20;
+
+            lblPlayerOneTotals.Text = PlayerOneLifeTotal.ToString();
+            lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();
+            lblPlayerThreeTotals.Text = PlayerThreeLifeTotal.ToString();
+            lblPlayerFourTotals.Text = PlayerFourLifeTotal.ToString();
+
+        }
         private void FormFourPlayers_Load(object sender, EventArgs e)
         {
-            FourPlayerSetup();
+            FourPlayerThemeSetup();
+            FourPlayerGameSetup();
+        }
+
+        private void btnPlayerOnePlus_Click(object sender, EventArgs e)
+        {
+            if(PlayerOneLifeToggled == true)
+            {
+                PlayerOneLifeTotal++;
+                if(PlayerOneLifeTotal > 999)
+                {
+                    PlayerOneLifeTotal = 999;
+                }
+                lblPlayerOneTotals.Text = PlayerOneLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerOnePoisonTotal++;
+                if (PlayerOnePoisonTotal > 10)
+                {
+                    PlayerOnePoisonTotal = 10;
+                }
+                lblPlayerOneTotals.Text = PlayerOnePoisonTotal.ToString();
+            }
+        }
+
+        private void btnPlayerOneMinus_Click(object sender, EventArgs e)
+        {
+            if (PlayerOneLifeToggled == true)
+            {
+                PlayerOneLifeTotal--;
+                if (PlayerOneLifeTotal < -99)
+                {
+                    PlayerOneLifeTotal = -99;
+                }
+                lblPlayerOneTotals.Text = PlayerOneLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerOnePoisonTotal--;
+                if (PlayerOnePoisonTotal < 0)
+                {
+                    PlayerOnePoisonTotal = 0;
+                }
+                lblPlayerOneTotals.Text = PlayerOnePoisonTotal.ToString();
+            }
+        }
+
+        private void btnPlayerOneLife_Click(object sender, EventArgs e)
+        {
+            if (PlayerOneLifeToggled == true)
+            {
+                lblPlayerOneTotals.Text = PlayerOnePoisonTotal.ToString();
+                btnPlayerOneLife.Text = "Poison";
+                PlayerOneLifeToggled = false;
+            }
+            else
+            {
+                lblPlayerOneTotals.Text = PlayerOneLifeTotal.ToString();
+                btnPlayerOneLife.Text = "Life";
+                PlayerOneLifeToggled = true;
+            }
+        }
+
+        private void btnPlayerTwoPlus_Click(object sender, EventArgs e)
+        {
+            if (PlayerTwoLifeToggled == true)
+            {
+                PlayerTwoLifeTotal++;
+                if (PlayerTwoLifeTotal > 999)
+                {
+                    PlayerTwoLifeTotal = 999;
+                }
+                lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerTwoPoisonTotal++;
+                if (PlayerTwoPoisonTotal > 10)
+                {
+                    PlayerTwoPoisonTotal = 10;
+                }
+                lblPlayerTwoTotals.Text = PlayerTwoPoisonTotal.ToString();
+            }
+        }
+
+        private void btnPlayerTwoMinus_Click(object sender, EventArgs e)
+        {
+            if (PlayerTwoLifeToggled == true)
+            {
+                PlayerTwoLifeTotal--;
+                if (PlayerTwoLifeTotal < -99)
+                {
+                    PlayerTwoLifeTotal = -99;
+                }
+                lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerTwoPoisonTotal--;
+                if (PlayerTwoPoisonTotal < 0)
+                {
+                    PlayerTwoPoisonTotal = 0;
+                }
+                lblPlayerTwoTotals.Text = PlayerTwoPoisonTotal.ToString();
+            }
+        }
+    
+
+        private void btnPlayerTwoLife_Click(object sender, EventArgs e)
+        {
+            if (PlayerTwoLifeToggled == true)
+            {
+                lblPlayerTwoTotals.Text = PlayerTwoPoisonTotal.ToString();
+                btnPlayerTwoLife.Text = "Poison";
+                PlayerTwoLifeToggled = false;
+            }
+            else
+            {
+                lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();
+                btnPlayerTwoLife.Text = "Life";
+                PlayerTwoLifeToggled = true;
+            }
+        }
+
+        private void btnPlayerThreePlus_Click(object sender, EventArgs e)
+        {
+            if (PlayerThreeLifeToggled == true)
+            {
+                PlayerThreeLifeTotal++;
+                if (PlayerThreeLifeTotal > 999)
+                {
+                    PlayerThreeLifeTotal = 999;
+                }
+                lblPlayerThreeTotals.Text = PlayerThreeLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerThreePoisonTotal++;
+                if (PlayerThreePoisonTotal > 10)
+                {
+                    PlayerThreePoisonTotal = 10;
+                }
+                lblPlayerThreeTotals.Text = PlayerThreePoisonTotal.ToString();
+            }
+        }
+
+        private void btnPlayerThreeMinus_Click(object sender, EventArgs e)
+        {
+            if (PlayerThreeLifeToggled == true)
+            {
+                PlayerThreeLifeTotal--;
+                if (PlayerThreeLifeTotal < -99)
+                {
+                    PlayerThreeLifeTotal = -99;
+                }
+                lblPlayerThreeTotals.Text = PlayerThreeLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerThreePoisonTotal--;
+                if (PlayerThreePoisonTotal < 0)
+                {
+                    PlayerThreePoisonTotal = 0;
+                }
+                lblPlayerThreeTotals.Text = PlayerThreePoisonTotal.ToString();
+            }
+        }
+
+        private void btnPlayerThreeLife_Click(object sender, EventArgs e)
+        {
+            if (PlayerThreeLifeToggled == true)
+            {
+                lblPlayerThreeTotals.Text = PlayerThreePoisonTotal.ToString();
+                btnPlayerThreeLife.Text = "Poison";
+                PlayerThreeLifeToggled = false;
+            }
+            else
+            {
+                lblPlayerThreeTotals.Text = PlayerThreeLifeTotal.ToString();
+                btnPlayerThreeLife.Text = "Life";
+                PlayerThreeLifeToggled = true;
+            }
+        }
+
+        private void btnPlayerFourPlus_Click(object sender, EventArgs e)
+        {
+            if (PlayerFourLifeToggled == true)
+            {
+                PlayerFourLifeTotal++;
+                if (PlayerFourLifeTotal > 999)
+                {
+                    PlayerFourLifeTotal = 999;
+                }
+                lblPlayerFourTotals.Text = PlayerFourLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerFourPoisonTotal++;
+                if (PlayerFourPoisonTotal > 10)
+                {
+                    PlayerFourPoisonTotal = 10;
+                }
+                lblPlayerFourTotals.Text = PlayerFourPoisonTotal.ToString();
+            }
+        }
+
+        private void btnPlayerFourMinus_Click(object sender, EventArgs e)
+        {
+            if (PlayerFourLifeToggled == true)
+            {
+                PlayerFourLifeTotal--;
+                if (PlayerFourLifeTotal < -99)
+                {
+                    PlayerFourLifeTotal = -99;
+                }
+                lblPlayerFourTotals.Text = PlayerFourLifeTotal.ToString();
+            }
+            else
+            {
+                PlayerFourPoisonTotal--;
+                if (PlayerFourPoisonTotal < 0)
+                {
+                    PlayerFourPoisonTotal = 0;
+                }
+                lblPlayerFourTotals.Text = PlayerFourPoisonTotal.ToString();
+            }
+        }
+
+        private void btnPlayerFourLife_Click(object sender, EventArgs e)
+        {
+            if (PlayerFourLifeToggled == true)
+            {
+                lblPlayerFourTotals.Text = PlayerFourPoisonTotal.ToString();
+                btnPlayerFourLife.Text = "Poison";
+                PlayerFourLifeToggled = false;
+            }
+            else
+            {
+                lblPlayerFourTotals.Text = PlayerFourLifeTotal.ToString();
+                btnPlayerFourLife.Text = "Life";
+                PlayerFourLifeToggled = true;
+            }
         }
     }
 }
