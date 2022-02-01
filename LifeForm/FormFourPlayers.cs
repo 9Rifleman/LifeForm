@@ -108,8 +108,8 @@ namespace LifeForm
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     btnPlayerTwoMinus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerTwoMinus.ForeColor = Color.White;
-                    btnPlayerTwoLife.BackColor = Color.White;
-                    btnPlayerTwoLife.ForeColor = Color.Black;
+                    btnPlayerTwoLife.BackColor = Color.Black;
+                    btnPlayerTwoLife.ForeColor = Color.White;
                     btnPlayerTwoLife.FlatAppearance.BorderColor = Color.White;
                     break;
 
@@ -154,8 +154,8 @@ namespace LifeForm
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     btnPlayerThreeMinus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerThreeMinus.ForeColor = Color.White;
-                    btnPlayerThreeLife.BackColor = Color.White;
-                    btnPlayerThreeLife.ForeColor = Color.Black;
+                    btnPlayerThreeLife.BackColor = Color.Black;
+                    btnPlayerThreeLife.ForeColor = Color.White;
                     btnPlayerThreeLife.FlatAppearance.BorderColor = Color.White;
                     break;
 

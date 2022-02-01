@@ -53,6 +53,7 @@
             this.btnPlayerTwoMinus = new System.Windows.Forms.Button();
             this.btnPlayerTwoPlus = new System.Windows.Forms.Button();
             this.lblPlayerTwoTotals = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlPlayerFour.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -62,10 +63,12 @@
             this.panel1.SuspendLayout();
             this.pnlPlayerTwo.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -73,7 +76,7 @@
             this.tableLayoutPanel1.Controls.Add(this.pnlPlayerThree, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.pnlPlayerOne, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pnlPlayerTwo, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 8);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -84,6 +87,7 @@
             // pnlPlayerFour
             // 
             this.pnlPlayerFour.AutoSize = true;
+            this.pnlPlayerFour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPlayerFour.Controls.Add(this.panel4);
             this.pnlPlayerFour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPlayerFour.Location = new System.Drawing.Point(420, 246);
@@ -152,6 +156,7 @@
             // pnlPlayerThree
             // 
             this.pnlPlayerThree.AutoSize = true;
+            this.pnlPlayerThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPlayerThree.Controls.Add(this.panel2);
             this.pnlPlayerThree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPlayerThree.Location = new System.Drawing.Point(3, 246);
@@ -220,6 +225,7 @@
             // pnlPlayerOne
             // 
             this.pnlPlayerOne.AutoSize = true;
+            this.pnlPlayerOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPlayerOne.Controls.Add(this.panel1);
             this.pnlPlayerOne.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPlayerOne.Location = new System.Drawing.Point(3, 3);
@@ -288,6 +294,7 @@
             // pnlPlayerTwo
             // 
             this.pnlPlayerTwo.AutoSize = true;
+            this.pnlPlayerTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPlayerTwo.Controls.Add(this.panel3);
             this.pnlPlayerTwo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPlayerTwo.Location = new System.Drawing.Point(420, 3);
@@ -353,13 +360,24 @@
             this.lblPlayerTwoTotals.Text = "0";
             this.lblPlayerTwoTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.tableLayoutPanel1);
+            this.panel5.Location = new System.Drawing.Point(12, 11);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(854, 505);
+            this.panel5.TabIndex = 1;
+            // 
             // FormFourPlayers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(834, 487);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(877, 527);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormFourPlayers";
@@ -378,6 +396,7 @@
             this.panel1.ResumeLayout(false);
             this.pnlPlayerTwo.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -409,5 +428,6 @@
         private Button btnPlayerTwoMinus;
         private Button btnPlayerTwoPlus;
         private Label lblPlayerTwoTotals;
+        private Panel panel5;
     }
 }

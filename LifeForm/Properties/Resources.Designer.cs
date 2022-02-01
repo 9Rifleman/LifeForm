@@ -103,6 +103,16 @@ namespace LifeForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap FourPlayers {
+            get {
+                object obj = ResourceManager.GetObject("FourPlayers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Green {
             get {
                 object obj = ResourceManager.GetObject("Green", resourceCulture);
@@ -136,6 +146,26 @@ namespace LifeForm.Properties {
         public static System.Drawing.Bitmap RedTheme {
             get {
                 object obj = ResourceManager.GetObject("RedTheme", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ThreePlayers {
+            get {
+                object obj = ResourceManager.GetObject("ThreePlayers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap TwoPlayers {
+            get {
+                object obj = ResourceManager.GetObject("TwoPlayers", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
