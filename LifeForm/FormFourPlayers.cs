@@ -47,6 +47,7 @@ namespace LifeForm
                 case 0:
                     pnlPlayerOne.BackColor = Color.Ivory;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.WhiteTheme;
+                    pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -54,6 +55,7 @@ namespace LifeForm
                 case 1:
                     pnlPlayerOne.BackColor = Color.Black;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.BlackTheme;
+                    pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerOneTotals.ForeColor = Color.White;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOnePlus.FlatAppearance.BorderColor = Color.White;
@@ -69,6 +71,7 @@ namespace LifeForm
                 case 2:
                     pnlPlayerOne.BackColor = Color.CornflowerBlue;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.BlueTheme;
+                    pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -76,6 +79,7 @@ namespace LifeForm
                 case 3:
                     pnlPlayerOne.BackColor = Color.Tomato;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.RedTheme;
+                    pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -83,6 +87,7 @@ namespace LifeForm
                 case 4:
                     pnlPlayerOne.BackColor = Color.ForestGreen;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.GreenTheme;
+                    pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -94,6 +99,7 @@ namespace LifeForm
                 case 0:
                     pnlPlayerTwo.BackColor = Color.Ivory;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.WhiteTheme;
+                    pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -101,6 +107,7 @@ namespace LifeForm
                 case 1:
                     pnlPlayerTwo.BackColor = Color.Black;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.BlackTheme;
+                    pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerTwoTotals.ForeColor = Color.White;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoPlus.FlatAppearance.BorderColor = Color.White;
@@ -116,6 +123,7 @@ namespace LifeForm
                 case 2:
                     pnlPlayerTwo.BackColor = Color.CornflowerBlue;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.BlueTheme;
+                    pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -123,6 +131,7 @@ namespace LifeForm
                 case 3:
                     pnlPlayerTwo.BackColor = Color.Tomato;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.RedTheme;
+                    pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -130,6 +139,7 @@ namespace LifeForm
                 case 4:
                     pnlPlayerTwo.BackColor = Color.ForestGreen;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.GreenTheme;
+                    pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -140,6 +150,7 @@ namespace LifeForm
                 case 0:
                     pnlPlayerThree.BackColor = Color.Ivory;
                     pnlPlayerThree.BackgroundImage = Properties.Resources.WhiteTheme;
+                    pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -147,6 +158,7 @@ namespace LifeForm
                 case 1:
                     pnlPlayerThree.BackColor = Color.Black;
                     pnlPlayerThree.BackgroundImage = Properties.Resources.BlackTheme;
+                    pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerThreeTotals.ForeColor = Color.White;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreePlus.FlatAppearance.BorderColor = Color.White;
@@ -162,6 +174,7 @@ namespace LifeForm
                 case 2:
                     pnlPlayerThree.BackColor = Color.CornflowerBlue;
                     pnlPlayerThree.BackgroundImage = Properties.Resources.BlueTheme;
+                    pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -169,6 +182,7 @@ namespace LifeForm
                 case 3:
                     pnlPlayerThree.BackColor = Color.Tomato;
                     pnlPlayerThree.BackgroundImage = Properties.Resources.RedTheme;
+                    pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -176,6 +190,7 @@ namespace LifeForm
                 case 4:
                     pnlPlayerThree.BackColor = Color.ForestGreen;
                     pnlPlayerThree.BackgroundImage = Properties.Resources.GreenTheme;
+                    pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -187,6 +202,7 @@ namespace LifeForm
                 case 0:
                     pnlPlayerFour.BackColor = Color.Ivory;
                     pnlPlayerFour.BackgroundImage = Properties.Resources.WhiteTheme;
+                    pnlPlayerFour.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerFourPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerFourMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -194,6 +210,7 @@ namespace LifeForm
                 case 1:
                     pnlPlayerFour.BackColor = Color.Black;
                     pnlPlayerFour.BackgroundImage = Properties.Resources.BlackTheme;
+                    pnlPlayerFour.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerFourTotals.ForeColor = Color.White;
                     btnPlayerFourPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerFourPlus.FlatAppearance.BorderColor = Color.White;
@@ -209,6 +226,7 @@ namespace LifeForm
                 case 2:
                     pnlPlayerFour.BackColor = Color.CornflowerBlue;
                     pnlPlayerFour.BackgroundImage = Properties.Resources.BlueTheme;
+                    pnlPlayerFour.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerFourPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerFourMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -216,6 +234,7 @@ namespace LifeForm
                 case 3:
                     pnlPlayerFour.BackColor = Color.Tomato;
                     pnlPlayerFour.BackgroundImage = Properties.Resources.RedTheme;
+                    pnlPlayerFour.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerFourPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerFourMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
@@ -223,6 +242,7 @@ namespace LifeForm
                 case 4:
                     pnlPlayerFour.BackColor = Color.ForestGreen;
                     pnlPlayerFour.BackgroundImage = Properties.Resources.GreenTheme;
+                    pnlPlayerFour.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerFourPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerFourMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
