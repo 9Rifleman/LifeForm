@@ -45,7 +45,7 @@
             // 
             // btnTwoPlayers
             // 
-            this.btnTwoPlayers.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTwoPlayers.BackColor = System.Drawing.Color.Black;
             this.btnTwoPlayers.BackgroundImage = global::LifeForm.Properties.Resources.TwoPlayers;
             this.btnTwoPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTwoPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -60,7 +60,7 @@
             // 
             // btnFourPlayers
             // 
-            this.btnFourPlayers.BackColor = System.Drawing.SystemColors.Control;
+            this.btnFourPlayers.BackColor = System.Drawing.Color.Black;
             this.btnFourPlayers.BackgroundImage = global::LifeForm.Properties.Resources.FourPlayers;
             this.btnFourPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFourPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -126,7 +126,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.BackgroundImage = global::LifeForm.Properties.Resources.ThreePlayers;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -153,6 +153,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Enabled = false;
             this.checkBox3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.checkBox3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkBox3.ForeColor = System.Drawing.Color.White;
@@ -167,6 +168,7 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Enabled = false;
             this.checkBox2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.checkBox2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkBox2.ForeColor = System.Drawing.Color.White;
@@ -184,6 +186,7 @@
             this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Enabled = false;
             this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.checkBox1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.checkBox1.ForeColor = System.Drawing.Color.White;
@@ -197,8 +200,9 @@
             // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(479, 260);
             this.Controls.Add(this.panel2);
@@ -208,9 +212,9 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.3.1.47";
+            this.Text = "LifeForm v0.4.0.60";
             this.TopMost = true;
-            this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.TransparencyKey = System.Drawing.Color.Cyan;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
