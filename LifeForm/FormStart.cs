@@ -1,3 +1,5 @@
+using System.Media;
+
 namespace LifeForm
 {
     public partial class FormStart : Form
@@ -65,6 +67,12 @@ namespace LifeForm
             PlayerThemeSelect();
             FormFourPlayers formFourPlayers = new FormFourPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerFourTheme);
             formFourPlayers.ShowDialog();
+        }
+
+        private void FormStart_Load(object sender, EventArgs e)
+        {
+            SoundPlayer soundPlayer = new(Properties.Resources.StartFX);
+            soundPlayer.Play();
         }
     }
 }

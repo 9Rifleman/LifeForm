@@ -215,9 +215,10 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.5.2.71";
+            this.Text = "LifeForm v0.5.3.77";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
+            this.Load += new System.EventHandler(this.FormStart_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

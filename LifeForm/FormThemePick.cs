@@ -21,41 +21,36 @@ namespace LifeForm
         public int ThemeId;
         private void btnWhite_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.WhiteFX);
-            soundPlayer.Play();
             ThemeId = 0;
+            ClassSounds sound = new ClassSounds(ThemeId);          
             this.Close();
         }
 
         private void btnBlack_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.BlackFX);
-            soundPlayer.Play();
             ThemeId = 1;
+            ClassSounds sound = new ClassSounds(ThemeId);
             this.Close();
         }
 
         private void btnBlue_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.BlueFX);
-            soundPlayer.Play();
             ThemeId = 2;
+            ClassSounds sound = new ClassSounds(ThemeId);
             this.Close();
         }
 
         private void btnRed_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.RedFX);
-            soundPlayer.Play();
             ThemeId = 3;
+            ClassSounds sound = new ClassSounds(ThemeId);
             this.Close();
         }
 
         private void btnGreen_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.GreenFX);
-            soundPlayer.Play();
             ThemeId = 4;
+            ClassSounds sound = new ClassSounds(ThemeId);
             this.Close();
         }
 
