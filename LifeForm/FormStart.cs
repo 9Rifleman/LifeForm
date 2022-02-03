@@ -51,6 +51,14 @@ namespace LifeForm
             //this.Close();
         }
 
+        private void btnThreePlayers_Click(object sender, EventArgs e)
+        {
+            PlayerNumber = 3;
+            PlayerThemeSelect();
+            FormThreePlayers formTwoPlayers = new FormThreePlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme);
+            formTwoPlayers.ShowDialog();
+        }
+
         private void btnFourPlayers_Click(object sender, EventArgs e)
         {
             PlayerNumber = 4;

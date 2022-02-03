@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThreePlayers = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -102,7 +102,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnThreePlayers);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnTwoPlayers);
             this.panel1.Controls.Add(this.btnFourPlayers);
@@ -124,19 +124,20 @@
             this.label3.Text = "3 players";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnThreePlayers
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.BackgroundImage = global::LifeForm.Properties.Resources.ThreePlayers;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(158, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 136);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnThreePlayers.BackColor = System.Drawing.Color.Black;
+            this.btnThreePlayers.BackgroundImage = global::LifeForm.Properties.Resources.ThreePlayers;
+            this.btnThreePlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThreePlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThreePlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThreePlayers.ForeColor = System.Drawing.Color.White;
+            this.btnThreePlayers.Location = new System.Drawing.Point(158, 8);
+            this.btnThreePlayers.Name = "btnThreePlayers";
+            this.btnThreePlayers.Size = new System.Drawing.Size(140, 136);
+            this.btnThreePlayers.TabIndex = 4;
+            this.btnThreePlayers.UseVisualStyleBackColor = false;
+            this.btnThreePlayers.Click += new System.EventHandler(this.btnThreePlayers_Click);
             // 
             // panel2
             // 
@@ -212,7 +213,7 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.4.0.60";
+            this.Text = "LifeForm v0.5.0.67";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
             this.panel1.ResumeLayout(false);
@@ -231,7 +232,7 @@
         private Label label2;
         private Panel panel1;
         private Label label3;
-        private Button button1;
+        private Button btnThreePlayers;
         private Panel panel2;
         private CheckBox checkBox3;
         private CheckBox checkBox2;

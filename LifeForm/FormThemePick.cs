@@ -21,7 +21,7 @@ namespace LifeForm
         public int ThemeId;
         private void btnWhite_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(@"C:\Users\Rifleman\Desktop\WhiteFX.wav");
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.WhiteFX);
             soundPlayer.Play();
             ThemeId = 0;
             this.Close();
@@ -29,7 +29,7 @@ namespace LifeForm
 
         private void btnBlack_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(@"C:\Users\Rifleman\Desktop\BlackFX.wav");
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.BlackFX);
             soundPlayer.Play();
             ThemeId = 1;
             this.Close();
@@ -37,7 +37,7 @@ namespace LifeForm
 
         private void btnBlue_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(@"C:\Users\Rifleman\Desktop\BlueFX.wav");
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.BlueFX);
             soundPlayer.Play();
             ThemeId = 2;
             this.Close();
@@ -45,7 +45,7 @@ namespace LifeForm
 
         private void btnRed_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(@"C:\Users\Rifleman\Desktop\RedFX.wav");
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.RedFX);
             soundPlayer.Play();
             ThemeId = 3;
             this.Close();
@@ -53,7 +53,7 @@ namespace LifeForm
 
         private void btnGreen_Click(object sender, EventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer(@"C:\Users\Rifleman\Desktop\GreenFX.wav");
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.GreenFX);
             soundPlayer.Play();
             ThemeId = 4;
             this.Close();
