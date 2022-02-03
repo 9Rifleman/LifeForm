@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStart));
             this.btnTwoPlayers = new System.Windows.Forms.Button();
             this.btnFourPlayers = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -210,10 +211,11 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.5.0.67";
+            this.Text = "LifeForm v0.5.2.71";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
             this.panel1.ResumeLayout(false);
