@@ -53,6 +53,7 @@ namespace LifeForm
                     pnlPlayerOne.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerOneTotals.ForeColor = Color.White;
+                    lblPlayerOneName.ForeColor = Color.White;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOnePlus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerOnePlus.ForeColor = Color.White;
@@ -105,6 +106,7 @@ namespace LifeForm
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerTwoTotals.ForeColor = Color.White;
+                    lblPlayerTwoName.ForeColor = Color.White;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoPlus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerTwoPlus.ForeColor = Color.White;
@@ -156,6 +158,7 @@ namespace LifeForm
                     pnlPlayerThree.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerThreeTotals.ForeColor = Color.White;
+                    lblPlayerThreeName.ForeColor = Color.White;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreePlus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerThreePlus.ForeColor = Color.White;
@@ -191,7 +194,7 @@ namespace LifeForm
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
                     break;
 
-            }           
+            }
         }
 
         private void ThreePlayerGameSetup()
@@ -392,5 +395,7 @@ namespace LifeForm
                 PlayerThreeLifeToggled = true;
             }
         }
+
+
     }
 }

@@ -48,6 +48,7 @@ namespace LifeForm
                     pnlPlayerOne.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerOneTotals.ForeColor = Color.White;
+                    lblPlayerOneName.ForeColor = Color.White;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOnePlus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerOnePlus.ForeColor = Color.White;
@@ -100,6 +101,7 @@ namespace LifeForm
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     lblPlayerTwoTotals.ForeColor = Color.White;
+                    lblPlayerTwoName.ForeColor = Color.White;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoPlus.FlatAppearance.BorderColor = Color.White;
                     btnPlayerTwoPlus.ForeColor = Color.White;
@@ -270,6 +272,11 @@ namespace LifeForm
                 btnPlayerTwoLife.Text = "Life";
                 PlayerTwoLifeToggled = true;
             }
+        }
+
+        private void lblPlayerOneName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

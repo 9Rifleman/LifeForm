@@ -32,18 +32,21 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlPlayerTwo = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblPlayerTwoName = new System.Windows.Forms.Label();
             this.lblPlayerTwoTotals = new System.Windows.Forms.Label();
             this.btnPlayerTwoLife = new System.Windows.Forms.Button();
             this.btnPlayerTwoMinus = new System.Windows.Forms.Button();
             this.btnPlayerTwoPlus = new System.Windows.Forms.Button();
             this.pnlPlayerOne = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblPlayerOneName = new System.Windows.Forms.Label();
             this.btnPlayerOneLife = new System.Windows.Forms.Button();
             this.btnPlayerOneMinus = new System.Windows.Forms.Button();
             this.btnPlayerOnePlus = new System.Windows.Forms.Button();
             this.lblPlayerOneTotals = new System.Windows.Forms.Label();
             this.pnlPlayerThree = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lblPlayerThreeName = new System.Windows.Forms.Label();
             this.lblPlayerThreeTotals = new System.Windows.Forms.Label();
             this.btnPlayerThreeLife = new System.Windows.Forms.Button();
             this.btnPlayerThreeMinus = new System.Windows.Forms.Button();
@@ -97,6 +100,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblPlayerTwoName);
             this.panel2.Controls.Add(this.lblPlayerTwoTotals);
             this.panel2.Controls.Add(this.btnPlayerTwoLife);
             this.panel2.Controls.Add(this.btnPlayerTwoMinus);
@@ -106,12 +110,23 @@
             this.panel2.Size = new System.Drawing.Size(200, 200);
             this.panel2.TabIndex = 2;
             // 
+            // lblPlayerTwoName
+            // 
+            this.lblPlayerTwoName.AutoSize = true;
+            this.lblPlayerTwoName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerTwoName.Location = new System.Drawing.Point(67, 10);
+            this.lblPlayerTwoName.Name = "lblPlayerTwoName";
+            this.lblPlayerTwoName.Size = new System.Drawing.Size(60, 19);
+            this.lblPlayerTwoName.TabIndex = 5;
+            this.lblPlayerTwoName.Text = "Player 2";
+            this.lblPlayerTwoName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblPlayerTwoTotals
             // 
             this.lblPlayerTwoTotals.Font = new System.Drawing.Font("Bahnschrift Condensed", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerTwoTotals.Location = new System.Drawing.Point(3, -2);
+            this.lblPlayerTwoTotals.Location = new System.Drawing.Point(3, 16);
             this.lblPlayerTwoTotals.Name = "lblPlayerTwoTotals";
-            this.lblPlayerTwoTotals.Size = new System.Drawing.Size(192, 97);
+            this.lblPlayerTwoTotals.Size = new System.Drawing.Size(192, 79);
             this.lblPlayerTwoTotals.TabIndex = 0;
             this.lblPlayerTwoTotals.Text = "20";
             this.lblPlayerTwoTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,6 +184,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblPlayerOneName);
             this.panel1.Controls.Add(this.btnPlayerOneLife);
             this.panel1.Controls.Add(this.btnPlayerOneMinus);
             this.panel1.Controls.Add(this.btnPlayerOnePlus);
@@ -177,6 +193,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 1;
+            // 
+            // lblPlayerOneName
+            // 
+            this.lblPlayerOneName.AutoSize = true;
+            this.lblPlayerOneName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerOneName.Location = new System.Drawing.Point(66, 10);
+            this.lblPlayerOneName.Name = "lblPlayerOneName";
+            this.lblPlayerOneName.Size = new System.Drawing.Size(58, 19);
+            this.lblPlayerOneName.TabIndex = 5;
+            this.lblPlayerOneName.Text = "Player 1";
+            this.lblPlayerOneName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPlayerOneLife
             // 
@@ -220,9 +247,9 @@
             // lblPlayerOneTotals
             // 
             this.lblPlayerOneTotals.Font = new System.Drawing.Font("Bahnschrift Condensed", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerOneTotals.Location = new System.Drawing.Point(3, 0);
+            this.lblPlayerOneTotals.Location = new System.Drawing.Point(3, 15);
             this.lblPlayerOneTotals.Name = "lblPlayerOneTotals";
-            this.lblPlayerOneTotals.Size = new System.Drawing.Size(192, 83);
+            this.lblPlayerOneTotals.Size = new System.Drawing.Size(192, 80);
             this.lblPlayerOneTotals.TabIndex = 0;
             this.lblPlayerOneTotals.Text = "20";
             this.lblPlayerOneTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -241,6 +268,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.lblPlayerThreeName);
             this.panel5.Controls.Add(this.lblPlayerThreeTotals);
             this.panel5.Controls.Add(this.btnPlayerThreeLife);
             this.panel5.Controls.Add(this.btnPlayerThreeMinus);
@@ -250,12 +278,23 @@
             this.panel5.Size = new System.Drawing.Size(200, 200);
             this.panel5.TabIndex = 2;
             // 
+            // lblPlayerThreeName
+            // 
+            this.lblPlayerThreeName.AutoSize = true;
+            this.lblPlayerThreeName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerThreeName.Location = new System.Drawing.Point(64, 9);
+            this.lblPlayerThreeName.Name = "lblPlayerThreeName";
+            this.lblPlayerThreeName.Size = new System.Drawing.Size(60, 19);
+            this.lblPlayerThreeName.TabIndex = 8;
+            this.lblPlayerThreeName.Text = "Player 3";
+            this.lblPlayerThreeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblPlayerThreeTotals
             // 
             this.lblPlayerThreeTotals.Font = new System.Drawing.Font("Bahnschrift Condensed", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerThreeTotals.Location = new System.Drawing.Point(3, -2);
+            this.lblPlayerThreeTotals.Location = new System.Drawing.Point(-1, 15);
             this.lblPlayerThreeTotals.Name = "lblPlayerThreeTotals";
-            this.lblPlayerThreeTotals.Size = new System.Drawing.Size(192, 97);
+            this.lblPlayerThreeTotals.Size = new System.Drawing.Size(192, 80);
             this.lblPlayerThreeTotals.TabIndex = 0;
             this.lblPlayerThreeTotals.Text = "20";
             this.lblPlayerThreeTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -317,10 +356,13 @@
             this.tableLayoutPanel1.PerformLayout();
             this.pnlPlayerTwo.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.pnlPlayerOne.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnlPlayerThree.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -347,5 +389,8 @@
         private Button btnPlayerOneMinus;
         private Button btnPlayerOnePlus;
         private Label lblPlayerOneTotals;
+        private Label lblPlayerTwoName;
+        private Label lblPlayerOneName;
+        private Label lblPlayerThreeName;
     }
 }
