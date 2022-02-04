@@ -115,6 +115,7 @@
             this.btnPlayerFourLife.Name = "btnPlayerFourLife";
             this.btnPlayerFourLife.Size = new System.Drawing.Size(126, 23);
             this.btnPlayerFourLife.TabIndex = 3;
+            this.btnPlayerFourLife.TabStop = false;
             this.btnPlayerFourLife.Text = "Life";
             this.btnPlayerFourLife.UseVisualStyleBackColor = true;
             this.btnPlayerFourLife.Click += new System.EventHandler(this.btnPlayerFourLife_Click);
@@ -127,6 +128,7 @@
             this.btnPlayerFourMinus.Name = "btnPlayerFourMinus";
             this.btnPlayerFourMinus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerFourMinus.TabIndex = 2;
+            this.btnPlayerFourMinus.TabStop = false;
             this.btnPlayerFourMinus.Text = "-";
             this.btnPlayerFourMinus.UseVisualStyleBackColor = true;
             this.btnPlayerFourMinus.Click += new System.EventHandler(this.btnPlayerFourMinus_Click);
@@ -139,6 +141,7 @@
             this.btnPlayerFourPlus.Name = "btnPlayerFourPlus";
             this.btnPlayerFourPlus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerFourPlus.TabIndex = 1;
+            this.btnPlayerFourPlus.TabStop = false;
             this.btnPlayerFourPlus.Text = "+";
             this.btnPlayerFourPlus.UseVisualStyleBackColor = true;
             this.btnPlayerFourPlus.Click += new System.EventHandler(this.btnPlayerFourPlus_Click);
@@ -184,6 +187,7 @@
             this.btnPlayerThreeLife.Name = "btnPlayerThreeLife";
             this.btnPlayerThreeLife.Size = new System.Drawing.Size(126, 23);
             this.btnPlayerThreeLife.TabIndex = 3;
+            this.btnPlayerThreeLife.TabStop = false;
             this.btnPlayerThreeLife.Text = "Life";
             this.btnPlayerThreeLife.UseVisualStyleBackColor = true;
             this.btnPlayerThreeLife.Click += new System.EventHandler(this.btnPlayerThreeLife_Click);
@@ -196,6 +200,7 @@
             this.btnPlayerThreeMinus.Name = "btnPlayerThreeMinus";
             this.btnPlayerThreeMinus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerThreeMinus.TabIndex = 2;
+            this.btnPlayerThreeMinus.TabStop = false;
             this.btnPlayerThreeMinus.Text = "-";
             this.btnPlayerThreeMinus.UseVisualStyleBackColor = true;
             this.btnPlayerThreeMinus.Click += new System.EventHandler(this.btnPlayerThreeMinus_Click);
@@ -208,6 +213,7 @@
             this.btnPlayerThreePlus.Name = "btnPlayerThreePlus";
             this.btnPlayerThreePlus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerThreePlus.TabIndex = 1;
+            this.btnPlayerThreePlus.TabStop = false;
             this.btnPlayerThreePlus.Text = "+";
             this.btnPlayerThreePlus.UseVisualStyleBackColor = true;
             this.btnPlayerThreePlus.Click += new System.EventHandler(this.btnPlayerThreePlus_Click);
@@ -253,6 +259,7 @@
             this.btnPlayerOneLife.Name = "btnPlayerOneLife";
             this.btnPlayerOneLife.Size = new System.Drawing.Size(126, 23);
             this.btnPlayerOneLife.TabIndex = 3;
+            this.btnPlayerOneLife.TabStop = false;
             this.btnPlayerOneLife.Text = "Life";
             this.btnPlayerOneLife.UseVisualStyleBackColor = true;
             this.btnPlayerOneLife.Click += new System.EventHandler(this.btnPlayerOneLife_Click);
@@ -265,6 +272,7 @@
             this.btnPlayerOneMinus.Name = "btnPlayerOneMinus";
             this.btnPlayerOneMinus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerOneMinus.TabIndex = 2;
+            this.btnPlayerOneMinus.TabStop = false;
             this.btnPlayerOneMinus.Text = "-";
             this.btnPlayerOneMinus.UseVisualStyleBackColor = true;
             this.btnPlayerOneMinus.Click += new System.EventHandler(this.btnPlayerOneMinus_Click);
@@ -277,6 +285,7 @@
             this.btnPlayerOnePlus.Name = "btnPlayerOnePlus";
             this.btnPlayerOnePlus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerOnePlus.TabIndex = 1;
+            this.btnPlayerOnePlus.TabStop = false;
             this.btnPlayerOnePlus.Text = "+";
             this.btnPlayerOnePlus.UseVisualStyleBackColor = true;
             this.btnPlayerOnePlus.Click += new System.EventHandler(this.btnPlayerOnePlus_Click);
@@ -322,6 +331,7 @@
             this.btnPlayerTwoLife.Name = "btnPlayerTwoLife";
             this.btnPlayerTwoLife.Size = new System.Drawing.Size(126, 23);
             this.btnPlayerTwoLife.TabIndex = 3;
+            this.btnPlayerTwoLife.TabStop = false;
             this.btnPlayerTwoLife.Text = "Life";
             this.btnPlayerTwoLife.UseVisualStyleBackColor = true;
             this.btnPlayerTwoLife.Click += new System.EventHandler(this.btnPlayerTwoLife_Click);
@@ -334,6 +344,7 @@
             this.btnPlayerTwoMinus.Name = "btnPlayerTwoMinus";
             this.btnPlayerTwoMinus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerTwoMinus.TabIndex = 2;
+            this.btnPlayerTwoMinus.TabStop = false;
             this.btnPlayerTwoMinus.Text = "-";
             this.btnPlayerTwoMinus.UseVisualStyleBackColor = true;
             this.btnPlayerTwoMinus.Click += new System.EventHandler(this.btnPlayerTwoMinus_Click);
@@ -346,6 +357,7 @@
             this.btnPlayerTwoPlus.Name = "btnPlayerTwoPlus";
             this.btnPlayerTwoPlus.Size = new System.Drawing.Size(60, 60);
             this.btnPlayerTwoPlus.TabIndex = 1;
+            this.btnPlayerTwoPlus.TabStop = false;
             this.btnPlayerTwoPlus.Text = "+";
             this.btnPlayerTwoPlus.UseVisualStyleBackColor = true;
             this.btnPlayerTwoPlus.Click += new System.EventHandler(this.btnPlayerTwoPlus_Click);

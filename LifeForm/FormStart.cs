@@ -4,26 +4,24 @@ namespace LifeForm
 {
     public partial class FormStart : Form
     {
-
+        public int PlayerOneTheme;
+        public int PlayerTwoTheme;
+        public int PlayerThreeTheme;
+        public int PlayerFourTheme;
+        public int PlayerNumber;
+        public int SoundsEnabled;
 
         public FormStart()
         {
             InitializeComponent();
         }
 
-        //
-        public int PlayerOneTheme;
-        public int PlayerTwoTheme;
-        public int PlayerThreeTheme;
-        public int PlayerFourTheme;
-        public int PlayerNumber;
-
         private void PlayerThemeSelect()
         {
 
             for (int PlayerCount = 1; PlayerCount <= PlayerNumber; PlayerCount++)
             {
-                FormThemePick formThemePick = new FormThemePick();
+                FormThemePick formThemePick = new FormThemePick(SoundsEnabled);
                 formThemePick.Text = Convert.ToString("Select the theme for player " + PlayerCount + ".");
                 formThemePick.ShowDialog();
                 switch (PlayerCount)
@@ -73,6 +71,30 @@ namespace LifeForm
         {
             SoundPlayer soundPlayer = new(Properties.Resources.StartFX);
             soundPlayer.Play();
+            SoundsEnabled = 1;
+        }
+
+        private void cboxSounds_Click(object sender, EventArgs e)
+        {
+            cboxSounds_Click(sender, e, cboxSounds);
+        }
+
+        private void cboxSounds_Click(object sender, EventArgs e, CheckBox cboxSounds)
+        {
+            switch(SoundsEnabled)
+            {
+                case 1:
+                    cboxSounds.Checked = false;
+                    cboxSounds.CheckState = CheckState.Unchecked;
+                    SoundsEnabled = 0;
+                    break;
+
+                case 0:
+                    cboxSounds.Checked = true;
+                    cboxSounds.CheckState = CheckState.Checked;
+                    SoundsEnabled = 1;
+                    break;
+            }
         }
     }
 }

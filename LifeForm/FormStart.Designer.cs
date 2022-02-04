@@ -37,9 +37,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnThreePlayers = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cboxTimer = new System.Windows.Forms.CheckBox();
+            this.cboxNames = new System.Windows.Forms.CheckBox();
+            this.cboxSounds = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +70,7 @@
             this.btnFourPlayers.Location = new System.Drawing.Point(304, 8);
             this.btnFourPlayers.Name = "btnFourPlayers";
             this.btnFourPlayers.Size = new System.Drawing.Size(140, 136);
-            this.btnFourPlayers.TabIndex = 1;
+            this.btnFourPlayers.TabIndex = 2;
             this.btnFourPlayers.UseVisualStyleBackColor = false;
             this.btnFourPlayers.Click += new System.EventHandler(this.btnFourPlayers_Click);
             // 
@@ -78,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(37, 147);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 25);
@@ -90,7 +90,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(336, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 25);
@@ -117,7 +117,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(191, 147);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 25);
@@ -136,7 +136,7 @@
             this.btnThreePlayers.Location = new System.Drawing.Point(158, 8);
             this.btnThreePlayers.Name = "btnThreePlayers";
             this.btnThreePlayers.Size = new System.Drawing.Size(140, 136);
-            this.btnThreePlayers.TabIndex = 4;
+            this.btnThreePlayers.TabIndex = 1;
             this.btnThreePlayers.UseVisualStyleBackColor = false;
             this.btnThreePlayers.Click += new System.EventHandler(this.btnThreePlayers_Click);
             // 
@@ -144,61 +144,62 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.checkBox3);
-            this.panel2.Controls.Add(this.checkBox2);
-            this.panel2.Controls.Add(this.checkBox1);
+            this.panel2.Controls.Add(this.cboxTimer);
+            this.panel2.Controls.Add(this.cboxNames);
+            this.panel2.Controls.Add(this.cboxSounds);
             this.panel2.Location = new System.Drawing.Point(12, 200);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(455, 47);
             this.panel2.TabIndex = 5;
             // 
-            // checkBox3
+            // cboxTimer
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Enabled = false;
-            this.checkBox3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.checkBox3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(347, 14);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(55, 20);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Timer";
-            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox3.UseVisualStyleBackColor = false;
+            this.cboxTimer.AutoSize = true;
+            this.cboxTimer.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cboxTimer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cboxTimer.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cboxTimer.ForeColor = System.Drawing.Color.Black;
+            this.cboxTimer.Location = new System.Drawing.Point(352, 3);
+            this.cboxTimer.Name = "cboxTimer";
+            this.cboxTimer.Size = new System.Drawing.Size(40, 34);
+            this.cboxTimer.TabIndex = 2;
+            this.cboxTimer.Text = "Timer";
+            this.cboxTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cboxTimer.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // cboxNames
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Enabled = false;
-            this.checkBox2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.checkBox2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(182, 14);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(96, 20);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Player names";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.cboxNames.AutoSize = true;
+            this.cboxNames.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cboxNames.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cboxNames.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cboxNames.ForeColor = System.Drawing.Color.Black;
+            this.cboxNames.Location = new System.Drawing.Point(187, 3);
+            this.cboxNames.Name = "cboxNames";
+            this.cboxNames.Size = new System.Drawing.Size(81, 34);
+            this.cboxNames.TabIndex = 1;
+            this.cboxNames.Text = "Player names";
+            this.cboxNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cboxNames.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // cboxSounds
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Enabled = false;
-            this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.checkBox1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(46, 14);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(63, 20);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Sounds";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.cboxSounds.AutoSize = true;
+            this.cboxSounds.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cboxSounds.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cboxSounds.Checked = true;
+            this.cboxSounds.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cboxSounds.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cboxSounds.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cboxSounds.ForeColor = System.Drawing.Color.Black;
+            this.cboxSounds.Location = new System.Drawing.Point(51, 3);
+            this.cboxSounds.Name = "cboxSounds";
+            this.cboxSounds.Size = new System.Drawing.Size(48, 34);
+            this.cboxSounds.TabIndex = 0;
+            this.cboxSounds.Text = "Sounds";
+            this.cboxSounds.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cboxSounds.UseVisualStyleBackColor = false;
+            this.cboxSounds.Click += new System.EventHandler(this.cboxSounds_Click);
             // 
             // FormStart
             // 
@@ -215,7 +216,7 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.5.3.77";
+            this.Text = "LifeForm v0.5.4.81";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
             this.Load += new System.EventHandler(this.FormStart_Load);
@@ -237,8 +238,8 @@
         private Label label3;
         private Button btnThreePlayers;
         private Panel panel2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
+        public CheckBox cboxTimer;
+        public CheckBox cboxNames;
+        public CheckBox cboxSounds;
     }
 }

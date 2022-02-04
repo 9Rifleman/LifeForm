@@ -13,44 +13,46 @@ namespace LifeForm
 {
     public partial class FormThemePick : Form
     {
-        public FormThemePick()
+        public int ThemeId;
+        public int SoundsEnabled;
+        public FormThemePick(int SoundsEnabled)
         {
+            this.SoundsEnabled = SoundsEnabled;
             InitializeComponent();
         }
-
-        public int ThemeId;
+        
         private void btnWhite_Click(object sender, EventArgs e)
         {
             ThemeId = 0;
-            ClassSounds sound = new ClassSounds(ThemeId);          
+            ThemeSounds sound = new ThemeSounds(ThemeId, SoundsEnabled);          
             this.Close();
         }
 
         private void btnBlack_Click(object sender, EventArgs e)
         {
             ThemeId = 1;
-            ClassSounds sound = new ClassSounds(ThemeId);
+            ThemeSounds sound = new ThemeSounds(ThemeId, SoundsEnabled);
             this.Close();
         }
 
         private void btnBlue_Click(object sender, EventArgs e)
         {
             ThemeId = 2;
-            ClassSounds sound = new ClassSounds(ThemeId);
+            ThemeSounds sound = new ThemeSounds(ThemeId, SoundsEnabled);
             this.Close();
         }
 
         private void btnRed_Click(object sender, EventArgs e)
         {
             ThemeId = 3;
-            ClassSounds sound = new ClassSounds(ThemeId);
+            ThemeSounds sound = new ThemeSounds(ThemeId, SoundsEnabled);
             this.Close();
         }
 
         private void btnGreen_Click(object sender, EventArgs e)
         {
             ThemeId = 4;
-            ClassSounds sound = new ClassSounds(ThemeId);
+            ThemeSounds sound = new ThemeSounds(ThemeId, SoundsEnabled);
             this.Close();
         }
 
