@@ -4,12 +4,20 @@ namespace LifeForm
 {
     public partial class FormStart : Form
     {
-        public int PlayerOneTheme;
+        public int PlayerOneTheme;              // vars required for theme selection on the life screen
         public int PlayerTwoTheme;
         public int PlayerThreeTheme;
         public int PlayerFourTheme;
         public int PlayerNumber;
-        public int SoundsEnabled;
+
+        public int SoundsEnabled;               // vars required for the start form checkboxes
+        public bool NamesEnabled = true;
+        public bool TimerEnabled;
+
+        public string PlayerOneName = "";       // vars required for nameplates on the life screen 
+        public string PlayerTwoName = "";
+        public string PlayerThreeName = "";
+        public string PlayerFourName = "";
 
         public FormStart()
         {
@@ -22,9 +30,23 @@ namespace LifeForm
             for (int PlayerCount = 1; PlayerCount <= PlayerNumber; PlayerCount++)
             {
                 FormThemePick formThemePick = new FormThemePick(SoundsEnabled);
-                formThemePick.Text = Convert.ToString("Select the theme for player " + PlayerCount + ".");
+                switch(PlayerCount)
+                {
+                    case 1:
+                        formThemePick.Text = Convert.ToString("Select the theme for " + PlayerOneName + ".");
+                        break;
+                    case 2:
+                        formThemePick.Text = Convert.ToString("Select the theme for " + PlayerTwoName + ".");
+                        break;
+                    case 3:
+                        formThemePick.Text = Convert.ToString("Select the theme for " + PlayerThreeName + ".");
+                        break;
+                    case 4:
+                        formThemePick.Text = Convert.ToString("Select the theme for " + PlayerFourName + ".");
+                        break;
+                }             
                 formThemePick.ShowDialog();
-                switch (PlayerCount)
+                switch(PlayerCount)
                 {
                     case 1:
                         PlayerOneTheme = Convert.ToInt32(formThemePick.ThemeId);
@@ -42,11 +64,22 @@ namespace LifeForm
             }
         }
 
+        private void GameSetup()
+        {
+            FormGamePick gamepick = new(PlayerNumber, NamesEnabled, TimerEnabled);
+            gamepick.ShowDialog();
+            PlayerOneName = gamepick.PlayerOneName;
+            PlayerTwoName = gamepick.PlayerTwoName;
+            PlayerThreeName = gamepick.PlayerThreeName;
+            PlayerFourName = gamepick.PlayerFourName;
+        }
+
         private void btnTwoPlayers_Click(object sender, EventArgs e)
         {
             PlayerNumber = 2;
+            GameSetup();
             PlayerThemeSelect();
-            FormTwoPlayers formTwoPlayers = new FormTwoPlayers(PlayerOneTheme, PlayerTwoTheme);
+            FormTwoPlayers formTwoPlayers = new FormTwoPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerOneName, PlayerTwoName);
             formTwoPlayers.ShowDialog();
             //this.Close();
         }
@@ -54,16 +87,18 @@ namespace LifeForm
         private void btnThreePlayers_Click(object sender, EventArgs e)
         {
             PlayerNumber = 3;
+            GameSetup();
             PlayerThemeSelect();
-            FormThreePlayers formTwoPlayers = new FormThreePlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme);
+            FormThreePlayers formTwoPlayers = new FormThreePlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerOneName, PlayerTwoName, PlayerThreeName);
             formTwoPlayers.ShowDialog();
         }
 
         private void btnFourPlayers_Click(object sender, EventArgs e)
         {
             PlayerNumber = 4;
+            GameSetup();
             PlayerThemeSelect();
-            FormFourPlayers formFourPlayers = new FormFourPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerFourTheme);
+            FormFourPlayers formFourPlayers = new FormFourPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerFourTheme, PlayerOneName, PlayerTwoName, PlayerThreeName, PlayerFourName);
             formFourPlayers.ShowDialog();
         }
 
@@ -93,6 +128,22 @@ namespace LifeForm
                     cboxSounds.Checked = true;
                     cboxSounds.CheckState = CheckState.Checked;
                     SoundsEnabled = 1;
+                    break;
+            }
+        }
+
+        private void cboxNames_Click(object sender, EventArgs e)
+        {
+            switch(NamesEnabled)
+            {
+                case(true):
+                    cboxNames.Checked = false;
+                    NamesEnabled = false;
+                    break;
+
+                case(false):
+                    cboxNames.Checked = true;
+                    NamesEnabled = true;
                     break;
             }
         }

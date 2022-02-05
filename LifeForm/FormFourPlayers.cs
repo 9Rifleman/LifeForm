@@ -17,26 +17,38 @@ namespace LifeForm
         private int playerThreeTheme;
         private int playerFourTheme;
 
+        private string playerOneName;
+        private string playerTwoName;
+        private string playerThreeName;
+        private string playerFourName;
+
         private int PlayerOneLifeTotal;
         private int PlayerTwoLifeTotal;
         private int PlayerThreeLifeTotal;
         private int PlayerFourLifeTotal;
 
-        private int PlayerOnePoisonTotal = 0;
-        private int PlayerTwoPoisonTotal = 0;
-        private int PlayerThreePoisonTotal = 0;
-        private int PlayerFourPoisonTotal = 0;
+        private int PlayerOnePoisonTotal;
+        private int PlayerTwoPoisonTotal;
+        private int PlayerThreePoisonTotal;
+        private int PlayerFourPoisonTotal;
 
         private bool PlayerOneLifeToggled = true;
         private bool PlayerTwoLifeToggled = true;
         private bool PlayerThreeLifeToggled = true;
         private bool PlayerFourLifeToggled = true;
-        public FormFourPlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme, int playerFourTheme)
+
+
+        public FormFourPlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme, int playerFourTheme, string playerOneName, string playerTwoName, string playerThreeName, string playerFourName)
         {
             this.playerOneTheme = playerOneTheme;
             this.playerTwoTheme = playerTwoTheme;
             this.playerThreeTheme = playerThreeTheme;
             this.playerFourTheme = playerFourTheme;
+            this.playerOneName = playerOneName;
+            this.playerTwoName = playerTwoName;
+            this.playerThreeName = playerThreeName;
+            this.playerFourName = playerFourName;
+
             InitializeComponent();
         }
 
@@ -261,10 +273,20 @@ namespace LifeForm
             PlayerThreeLifeTotal = 20;
             PlayerFourLifeTotal = 20;
 
+            PlayerOnePoisonTotal = 0;
+            PlayerTwoPoisonTotal = 0;
+            PlayerThreePoisonTotal = 0;
+            PlayerFourPoisonTotal = 0;
+
             lblPlayerOneTotals.Text = PlayerOneLifeTotal.ToString();
             lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();
             lblPlayerThreeTotals.Text = PlayerThreeLifeTotal.ToString();
             lblPlayerFourTotals.Text = PlayerFourLifeTotal.ToString();
+
+            lblPlayerOneName.Text = playerOneName.ToString();
+            lblPlayerTwoName.Text = playerTwoName.ToString();
+            lblPlayerThreeName.Text = playerThreeName.ToString();
+            lblPlayerFourName.Text = playerFourName.ToString();
 
         }
         private void FormFourPlayers_Load(object sender, EventArgs e)

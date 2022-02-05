@@ -16,23 +16,30 @@ namespace LifeForm
         private int playerTwoTheme;
         private int playerThreeTheme;
 
+        private string playerOneName;
+        private string playerTwoName;
+        private string playerThreeName;
+
         private int PlayerOneLifeTotal;
         private int PlayerTwoLifeTotal;
         private int PlayerThreeLifeTotal;
 
-        private int PlayerOnePoisonTotal = 0;
-        private int PlayerTwoPoisonTotal = 0;
-        private int PlayerThreePoisonTotal = 0;
+        private int PlayerOnePoisonTotal;
+        private int PlayerTwoPoisonTotal;
+        private int PlayerThreePoisonTotal;
 
         private bool PlayerOneLifeToggled = true;
         private bool PlayerTwoLifeToggled = true;
         private bool PlayerThreeLifeToggled = true;
 
-        public FormThreePlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme)
+        public FormThreePlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme, string playerOneName, string playerTwoName, string playerThreeName)
         {
             this.playerOneTheme = playerOneTheme;
             this.playerTwoTheme = playerTwoTheme;
             this.playerThreeTheme = playerThreeTheme;
+            this.playerOneName = playerOneName;
+            this.playerTwoName = playerTwoName;
+            this.playerThreeName = playerThreeName;
             InitializeComponent();
         }
 
@@ -203,10 +210,17 @@ namespace LifeForm
             PlayerTwoLifeTotal = 20;
             PlayerThreeLifeTotal = 20;
 
+            PlayerOnePoisonTotal = 0;
+            PlayerTwoPoisonTotal = 0;
+            PlayerThreePoisonTotal = 0;
 
             lblPlayerOneTotals.Text = PlayerOneLifeTotal.ToString();
             lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();
             lblPlayerThreeTotals.Text = PlayerThreeLifeTotal.ToString();
+
+            lblPlayerOneName.Text = playerOneName.ToString();
+            lblPlayerTwoName.Text = playerTwoName.ToString();
+            lblPlayerThreeName.Text = playerThreeName.ToString();
         }
 
         private void FormThreePlayers_Load(object sender, EventArgs e)

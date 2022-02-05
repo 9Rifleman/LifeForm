@@ -171,6 +171,8 @@
             // 
             this.cboxNames.AutoSize = true;
             this.cboxNames.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cboxNames.Checked = true;
+            this.cboxNames.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cboxNames.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cboxNames.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboxNames.ForeColor = System.Drawing.Color.Black;
@@ -181,6 +183,7 @@
             this.cboxNames.Text = "Player names";
             this.cboxNames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cboxNames.UseVisualStyleBackColor = false;
+            this.cboxNames.Click += new System.EventHandler(this.cboxNames_Click);
             // 
             // cboxSounds
             // 
@@ -216,7 +219,7 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.5.5.83";
+            this.Text = "LifeForm v0.6.0.102";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
             this.Load += new System.EventHandler(this.FormStart_Load);

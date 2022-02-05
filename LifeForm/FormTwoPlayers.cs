@@ -15,19 +15,24 @@ namespace LifeForm
         private int playerOneTheme;
         private int playerTwoTheme;
 
+        private string playerOneName;
+        private string playerTwoName;
+
         private int PlayerOneLifeTotal;
         private int PlayerTwoLifeTotal;
 
-        private int PlayerOnePoisonTotal = 0;
-        private int PlayerTwoPoisonTotal = 0;
+        private int PlayerOnePoisonTotal;
+        private int PlayerTwoPoisonTotal;
 
         private bool PlayerOneLifeToggled = true;
         private bool PlayerTwoLifeToggled = true;
 
-        public FormTwoPlayers(int playerOneTheme, int playerTwoTheme)
+        public FormTwoPlayers(int playerOneTheme, int playerTwoTheme, string playerOneName, string playerTwoName)
         {
             this.playerOneTheme = playerOneTheme;
             this.playerTwoTheme = playerTwoTheme;
+            this.playerOneName = playerOneName;
+            this.playerTwoName = playerTwoName;
             InitializeComponent();
         }
 
@@ -144,8 +149,14 @@ namespace LifeForm
             PlayerOneLifeTotal = 20;
             PlayerTwoLifeTotal = 20;
 
+            PlayerOnePoisonTotal = 0;
+            PlayerTwoPoisonTotal = 0;
+
             lblPlayerOneTotals.Text = PlayerOneLifeTotal.ToString();
-            lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();     
+            lblPlayerTwoTotals.Text = PlayerTwoLifeTotal.ToString();
+
+            lblPlayerOneName.Text = playerOneName.ToString();
+            lblPlayerTwoName.Text = playerTwoName.ToString();
         }
         private void FormTwoPlayers_Load(object sender, EventArgs e)
         {
