@@ -281,8 +281,10 @@
             this.btnPauseResume.Name = "btnPauseResume";
             this.btnPauseResume.Size = new System.Drawing.Size(68, 46);
             this.btnPauseResume.TabIndex = 3;
+            this.btnPauseResume.TabStop = false;
             this.btnPauseResume.Text = "Pause";
             this.btnPauseResume.UseVisualStyleBackColor = false;
+            this.btnPauseResume.Click += new System.EventHandler(this.btnPauseResume_Click);
             // 
             // btnReset
             // 
@@ -294,8 +296,10 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(68, 46);
             this.btnReset.TabIndex = 2;
+            this.btnReset.TabStop = false;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // label3
             // 

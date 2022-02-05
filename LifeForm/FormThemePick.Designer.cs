@@ -43,6 +43,7 @@
             this.btnWhite.BackColor = System.Drawing.Color.Ivory;
             this.btnWhite.BackgroundImage = global::LifeForm.Properties.Resources.White;
             this.btnWhite.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnWhite.FlatAppearance.BorderSize = 3;
             this.btnWhite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWhite.Location = new System.Drawing.Point(9, 10);
             this.btnWhite.Name = "btnWhite";
@@ -57,6 +58,7 @@
             this.btnBlack.BackColor = System.Drawing.Color.DimGray;
             this.btnBlack.BackgroundImage = global::LifeForm.Properties.Resources.Black;
             this.btnBlack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlack.FlatAppearance.BorderSize = 3;
             this.btnBlack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlack.Location = new System.Drawing.Point(101, 10);
             this.btnBlack.Name = "btnBlack";
@@ -71,6 +73,7 @@
             this.btnBlue.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnBlue.BackgroundImage = global::LifeForm.Properties.Resources.Blue;
             this.btnBlue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBlue.FlatAppearance.BorderSize = 3;
             this.btnBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBlue.Location = new System.Drawing.Point(193, 10);
             this.btnBlue.Name = "btnBlue";
@@ -85,6 +88,7 @@
             this.btnRed.BackColor = System.Drawing.Color.LightCoral;
             this.btnRed.BackgroundImage = global::LifeForm.Properties.Resources.Red;
             this.btnRed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRed.FlatAppearance.BorderSize = 3;
             this.btnRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRed.Location = new System.Drawing.Point(285, 10);
             this.btnRed.Name = "btnRed";
@@ -99,6 +103,7 @@
             this.btnGreen.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnGreen.BackgroundImage = global::LifeForm.Properties.Resources.Green;
             this.btnGreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGreen.FlatAppearance.BorderSize = 3;
             this.btnGreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGreen.Location = new System.Drawing.Point(377, 10);
             this.btnGreen.Name = "btnGreen";
@@ -109,6 +114,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnGreen);
@@ -127,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(502, 129);
+            this.ClientSize = new System.Drawing.Size(498, 129);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -141,6 +147,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

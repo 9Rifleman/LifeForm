@@ -34,6 +34,7 @@ namespace LifeForm
 
         private bool TimerEnabled;
         private int TimeSet;
+        private int TimeSetDefault;
 
         public FormThreePlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme, string playerOneName, string playerTwoName, string playerThreeName, bool timerEnabled, int timeSet)
         {
@@ -231,6 +232,7 @@ namespace LifeForm
             if (TimerEnabled == true)
             {
                 lblTimeLeft.Text = TimeSet.ToString();
+                TimeSetDefault = TimeSet;
                 timer1.Start();
             }
             else
@@ -431,6 +433,26 @@ namespace LifeForm
         {
             TimeSet--;
             lblTimeLeft.Text = TimeSet.ToString();
+        }
+
+        private void btnPauseResume_Click(object sender, EventArgs e)
+        {
+            if (btnPauseResume.Text == "Pause")
+            {
+                btnPauseResume.Text = "Resume";
+                timer1.Stop();
+            }
+            else if (btnPauseResume.Text == "Resume")
+            {
+                btnPauseResume.Text = "Pause";
+                timer1.Start();
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            TimeSet = TimeSetDefault;
+            ThreePlayerGameSetup();
         }
     }
 }

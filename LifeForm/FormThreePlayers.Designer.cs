@@ -142,11 +142,12 @@
             // 
             // btnPlayerTwoLife
             // 
+            this.btnPlayerTwoLife.FlatAppearance.BorderSize = 3;
             this.btnPlayerTwoLife.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerTwoLife.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerTwoLife.Location = new System.Drawing.Point(36, 164);
             this.btnPlayerTwoLife.Name = "btnPlayerTwoLife";
-            this.btnPlayerTwoLife.Size = new System.Drawing.Size(126, 23);
+            this.btnPlayerTwoLife.Size = new System.Drawing.Size(126, 28);
             this.btnPlayerTwoLife.TabIndex = 7;
             this.btnPlayerTwoLife.TabStop = false;
             this.btnPlayerTwoLife.Text = "Life";
@@ -155,6 +156,7 @@
             // 
             // btnPlayerTwoMinus
             // 
+            this.btnPlayerTwoMinus.FlatAppearance.BorderSize = 3;
             this.btnPlayerTwoMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerTwoMinus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerTwoMinus.Location = new System.Drawing.Point(102, 98);
@@ -168,6 +170,7 @@
             // 
             // btnPlayerTwoPlus
             // 
+            this.btnPlayerTwoPlus.FlatAppearance.BorderSize = 3;
             this.btnPlayerTwoPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerTwoPlus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerTwoPlus.Location = new System.Drawing.Point(36, 98);
@@ -215,11 +218,12 @@
             // 
             // btnPlayerOneLife
             // 
+            this.btnPlayerOneLife.FlatAppearance.BorderSize = 3;
             this.btnPlayerOneLife.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerOneLife.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerOneLife.Location = new System.Drawing.Point(36, 164);
             this.btnPlayerOneLife.Name = "btnPlayerOneLife";
-            this.btnPlayerOneLife.Size = new System.Drawing.Size(126, 23);
+            this.btnPlayerOneLife.Size = new System.Drawing.Size(126, 28);
             this.btnPlayerOneLife.TabIndex = 3;
             this.btnPlayerOneLife.TabStop = false;
             this.btnPlayerOneLife.Text = "Life";
@@ -228,6 +232,7 @@
             // 
             // btnPlayerOneMinus
             // 
+            this.btnPlayerOneMinus.FlatAppearance.BorderSize = 3;
             this.btnPlayerOneMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerOneMinus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerOneMinus.Location = new System.Drawing.Point(102, 98);
@@ -241,6 +246,7 @@
             // 
             // btnPlayerOnePlus
             // 
+            this.btnPlayerOnePlus.FlatAppearance.BorderSize = 3;
             this.btnPlayerOnePlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerOnePlus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerOnePlus.Location = new System.Drawing.Point(36, 98);
@@ -308,11 +314,12 @@
             // 
             // btnPlayerThreeLife
             // 
+            this.btnPlayerThreeLife.FlatAppearance.BorderSize = 3;
             this.btnPlayerThreeLife.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerThreeLife.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerThreeLife.Location = new System.Drawing.Point(36, 164);
             this.btnPlayerThreeLife.Name = "btnPlayerThreeLife";
-            this.btnPlayerThreeLife.Size = new System.Drawing.Size(126, 23);
+            this.btnPlayerThreeLife.Size = new System.Drawing.Size(126, 28);
             this.btnPlayerThreeLife.TabIndex = 7;
             this.btnPlayerThreeLife.TabStop = false;
             this.btnPlayerThreeLife.Text = "Life";
@@ -321,6 +328,7 @@
             // 
             // btnPlayerThreeMinus
             // 
+            this.btnPlayerThreeMinus.FlatAppearance.BorderSize = 3;
             this.btnPlayerThreeMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerThreeMinus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerThreeMinus.Location = new System.Drawing.Point(102, 98);
@@ -334,6 +342,7 @@
             // 
             // btnPlayerThreePlus
             // 
+            this.btnPlayerThreePlus.FlatAppearance.BorderSize = 3;
             this.btnPlayerThreePlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlayerThreePlus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerThreePlus.Location = new System.Drawing.Point(36, 98);
@@ -369,8 +378,10 @@
             this.btnPauseResume.Name = "btnPauseResume";
             this.btnPauseResume.Size = new System.Drawing.Size(68, 46);
             this.btnPauseResume.TabIndex = 3;
+            this.btnPauseResume.TabStop = false;
             this.btnPauseResume.Text = "Pause";
             this.btnPauseResume.UseVisualStyleBackColor = false;
+            this.btnPauseResume.Click += new System.EventHandler(this.btnPauseResume_Click);
             // 
             // btnReset
             // 
@@ -382,8 +393,10 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(68, 46);
             this.btnReset.TabIndex = 2;
+            this.btnReset.TabStop = false;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // label3
             // 

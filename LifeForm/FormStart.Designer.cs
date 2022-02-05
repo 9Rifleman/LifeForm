@@ -49,6 +49,7 @@
             this.btnTwoPlayers.BackColor = System.Drawing.Color.Black;
             this.btnTwoPlayers.BackgroundImage = global::LifeForm.Properties.Resources.TwoPlayers;
             this.btnTwoPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTwoPlayers.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnTwoPlayers.FlatAppearance.BorderSize = 3;
             this.btnTwoPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTwoPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -65,6 +66,7 @@
             this.btnFourPlayers.BackColor = System.Drawing.Color.Black;
             this.btnFourPlayers.BackgroundImage = global::LifeForm.Properties.Resources.FourPlayers;
             this.btnFourPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFourPlayers.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnFourPlayers.FlatAppearance.BorderSize = 3;
             this.btnFourPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFourPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -132,11 +134,12 @@
             this.btnThreePlayers.BackColor = System.Drawing.Color.Black;
             this.btnThreePlayers.BackgroundImage = global::LifeForm.Properties.Resources.ThreePlayers;
             this.btnThreePlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThreePlayers.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnThreePlayers.FlatAppearance.BorderSize = 3;
             this.btnThreePlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThreePlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThreePlayers.ForeColor = System.Drawing.Color.Black;
-            this.btnThreePlayers.Location = new System.Drawing.Point(158, 8);
+            this.btnThreePlayers.Location = new System.Drawing.Point(159, 8);
             this.btnThreePlayers.Name = "btnThreePlayers";
             this.btnThreePlayers.Size = new System.Drawing.Size(140, 136);
             this.btnThreePlayers.TabIndex = 1;
@@ -159,6 +162,7 @@
             // 
             this.cboxTimer.AutoSize = true;
             this.cboxTimer.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.cboxTimer.Cursor = System.Windows.Forms.Cursors.Default;
             this.cboxTimer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cboxTimer.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboxTimer.ForeColor = System.Drawing.Color.Black;
@@ -177,6 +181,7 @@
             this.cboxNames.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.cboxNames.Checked = true;
             this.cboxNames.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cboxNames.Cursor = System.Windows.Forms.Cursors.Default;
             this.cboxNames.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cboxNames.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboxNames.ForeColor = System.Drawing.Color.Black;
@@ -196,6 +201,7 @@
             this.cboxSounds.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.cboxSounds.Checked = true;
             this.cboxSounds.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cboxSounds.Cursor = System.Windows.Forms.Cursors.Default;
             this.cboxSounds.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cboxSounds.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cboxSounds.ForeColor = System.Drawing.Color.Black;
@@ -223,7 +229,7 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.7.0.111";
+            this.Text = "LifeForm v0.8.0.120";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
             this.Load += new System.EventHandler(this.FormStart_Load);
