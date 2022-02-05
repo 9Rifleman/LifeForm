@@ -58,6 +58,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
@@ -95,7 +96,7 @@
             // 
             // tboxGameTime
             // 
-            this.tboxGameTime.BackColor = System.Drawing.Color.Gray;
+            this.tboxGameTime.BackColor = System.Drawing.Color.Silver;
             this.tboxGameTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tboxGameTime.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tboxGameTime.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -173,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(230, 259);
+            this.ClientSize = new System.Drawing.Size(235, 263);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -187,6 +188,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

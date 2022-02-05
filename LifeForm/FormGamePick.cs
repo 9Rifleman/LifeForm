@@ -117,7 +117,22 @@ namespace LifeForm
 
         private void tboxGameTime_TextChanged(object sender, EventArgs e)
         {
-            TimeSet = Convert.ToInt32(tboxGameTime.Text);
+            try
+            {
+                if (Convert.ToInt32(tboxGameTime.Text) < 0)
+                {
+                    TimeSet = 0;
+                }
+                else if (Convert.ToInt32(tboxGameTime.Text) > 99)
+                {
+                    TimeSet = 99;
+                }
+                TimeSet = Convert.ToInt32(tboxGameTime.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

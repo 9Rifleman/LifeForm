@@ -32,7 +32,10 @@ namespace LifeForm
         private bool PlayerTwoLifeToggled = true;
         private bool PlayerThreeLifeToggled = true;
 
-        public FormThreePlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme, string playerOneName, string playerTwoName, string playerThreeName)
+        private bool TimerEnabled;
+        private int TimeSet;
+
+        public FormThreePlayers(int playerOneTheme, int playerTwoTheme, int playerThreeTheme, string playerOneName, string playerTwoName, string playerThreeName, bool timerEnabled, int timeSet)
         {
             this.playerOneTheme = playerOneTheme;
             this.playerTwoTheme = playerTwoTheme;
@@ -40,6 +43,9 @@ namespace LifeForm
             this.playerOneName = playerOneName;
             this.playerTwoName = playerTwoName;
             this.playerThreeName = playerThreeName;
+            this.TimerEnabled = timerEnabled;
+            this.TimeSet = timeSet;
+
             InitializeComponent();
         }
 
@@ -221,6 +227,17 @@ namespace LifeForm
             lblPlayerOneName.Text = playerOneName.ToString();
             lblPlayerTwoName.Text = playerTwoName.ToString();
             lblPlayerThreeName.Text = playerThreeName.ToString();
+
+            if (TimerEnabled == true)
+            {
+                lblTimeLeft.Text = TimeSet.ToString();
+                timer1.Start();
+            }
+            else
+            {
+                lblTimeLeft.Text = "0";
+                lblTimeLeft.Enabled = false;
+            }
         }
 
         private void FormThreePlayers_Load(object sender, EventArgs e)
@@ -410,6 +427,10 @@ namespace LifeForm
             }
         }
 
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSet--;
+            lblTimeLeft.Text = TimeSet.ToString();
+        }
     }
 }

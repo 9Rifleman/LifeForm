@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlPlayerTwo = new System.Windows.Forms.Panel();
@@ -51,6 +52,13 @@
             this.btnPlayerThreeLife = new System.Windows.Forms.Button();
             this.btnPlayerThreeMinus = new System.Windows.Forms.Button();
             this.btnPlayerThreePlus = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnPauseResume = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTimeLeft = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlPlayerTwo.SuspendLayout();
@@ -59,6 +67,7 @@
             this.panel1.SuspendLayout();
             this.pnlPlayerThree.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -124,7 +133,7 @@
             // lblPlayerTwoTotals
             // 
             this.lblPlayerTwoTotals.Font = new System.Drawing.Font("Bahnschrift Condensed", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerTwoTotals.Location = new System.Drawing.Point(3, 16);
+            this.lblPlayerTwoTotals.Location = new System.Drawing.Point(3, 15);
             this.lblPlayerTwoTotals.Name = "lblPlayerTwoTotals";
             this.lblPlayerTwoTotals.Size = new System.Drawing.Size(192, 79);
             this.lblPlayerTwoTotals.TabIndex = 0;
@@ -336,12 +345,87 @@
             this.btnPlayerThreePlus.UseVisualStyleBackColor = true;
             this.btnPlayerThreePlus.Click += new System.EventHandler(this.btnPlayerThreePlus_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.btnPauseResume);
+            this.panel4.Controls.Add(this.btnReset);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.lblTimeLeft);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Location = new System.Drawing.Point(12, 766);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(436, 54);
+            this.panel4.TabIndex = 4;
+            // 
+            // btnPauseResume
+            // 
+            this.btnPauseResume.BackColor = System.Drawing.Color.Gray;
+            this.btnPauseResume.FlatAppearance.BorderSize = 3;
+            this.btnPauseResume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPauseResume.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPauseResume.Location = new System.Drawing.Point(289, 3);
+            this.btnPauseResume.Name = "btnPauseResume";
+            this.btnPauseResume.Size = new System.Drawing.Size(68, 46);
+            this.btnPauseResume.TabIndex = 3;
+            this.btnPauseResume.Text = "Pause";
+            this.btnPauseResume.UseVisualStyleBackColor = false;
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Gray;
+            this.btnReset.FlatAppearance.BorderSize = 3;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.Location = new System.Drawing.Point(363, 3);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(68, 46);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(120, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "minutes";
+            // 
+            // lblTimeLeft
+            // 
+            this.lblTimeLeft.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTimeLeft.Location = new System.Drawing.Point(97, 12);
+            this.lblTimeLeft.Name = "lblTimeLeft";
+            this.lblTimeLeft.Size = new System.Drawing.Size(38, 30);
+            this.lblTimeLeft.TabIndex = 0;
+            this.lblTimeLeft.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(13, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Time left:";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 60000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormThreePlayers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(460, 772);
+            this.ClientSize = new System.Drawing.Size(460, 835);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormThreePlayers";
@@ -359,6 +443,8 @@
             this.panel1.ResumeLayout(false);
             this.pnlPlayerThree.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -388,5 +474,12 @@
         private Label lblPlayerTwoName;
         private Label lblPlayerOneName;
         private Label lblPlayerThreeName;
+        private Panel panel4;
+        private Button btnPauseResume;
+        private Button btnReset;
+        private Label label3;
+        private Label lblTimeLeft;
+        private Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

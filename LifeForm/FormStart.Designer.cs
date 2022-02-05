@@ -52,7 +52,7 @@
             this.btnTwoPlayers.FlatAppearance.BorderSize = 3;
             this.btnTwoPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTwoPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTwoPlayers.ForeColor = System.Drawing.Color.White;
+            this.btnTwoPlayers.ForeColor = System.Drawing.Color.Black;
             this.btnTwoPlayers.Location = new System.Drawing.Point(10, 8);
             this.btnTwoPlayers.Name = "btnTwoPlayers";
             this.btnTwoPlayers.Size = new System.Drawing.Size(142, 136);
@@ -68,7 +68,7 @@
             this.btnFourPlayers.FlatAppearance.BorderSize = 3;
             this.btnFourPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFourPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnFourPlayers.ForeColor = System.Drawing.Color.White;
+            this.btnFourPlayers.ForeColor = System.Drawing.Color.Black;
             this.btnFourPlayers.Location = new System.Drawing.Point(304, 8);
             this.btnFourPlayers.Name = "btnFourPlayers";
             this.btnFourPlayers.Size = new System.Drawing.Size(140, 136);
@@ -135,7 +135,7 @@
             this.btnThreePlayers.FlatAppearance.BorderSize = 3;
             this.btnThreePlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThreePlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnThreePlayers.ForeColor = System.Drawing.Color.White;
+            this.btnThreePlayers.ForeColor = System.Drawing.Color.Black;
             this.btnThreePlayers.Location = new System.Drawing.Point(158, 8);
             this.btnThreePlayers.Name = "btnThreePlayers";
             this.btnThreePlayers.Size = new System.Drawing.Size(140, 136);
@@ -223,7 +223,7 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.6.1.109";
+            this.Text = "LifeForm v0.7.0.111";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
             this.Load += new System.EventHandler(this.FormStart_Load);

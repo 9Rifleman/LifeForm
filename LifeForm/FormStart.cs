@@ -91,7 +91,7 @@ namespace LifeForm
             PlayerNumber = 3;
             GameSetup();
             PlayerThemeSelect();
-            FormThreePlayers formTwoPlayers = new FormThreePlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerOneName, PlayerTwoName, PlayerThreeName);
+            FormThreePlayers formTwoPlayers = new FormThreePlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerOneName, PlayerTwoName, PlayerThreeName, TimerEnabled, TimeSet);
             formTwoPlayers.ShowDialog();
         }
 
@@ -100,7 +100,7 @@ namespace LifeForm
             PlayerNumber = 4;
             GameSetup();
             PlayerThemeSelect();
-            FormFourPlayers formFourPlayers = new FormFourPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerFourTheme, PlayerOneName, PlayerTwoName, PlayerThreeName, PlayerFourName);
+            FormFourPlayers formFourPlayers = new FormFourPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerThreeTheme, PlayerFourTheme, PlayerOneName, PlayerTwoName, PlayerThreeName, PlayerFourName, TimerEnabled, TimeSet);
             formFourPlayers.ShowDialog();
         }
 
