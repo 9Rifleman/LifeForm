@@ -12,10 +12,10 @@ namespace LifeForm
 {
     public partial class FormGamePick : Form
     {
-        public string PlayerOneName = "";
-        public string PlayerTwoName = "";
-        public string PlayerThreeName = "";
-        public string PlayerFourName = "";
+        public string PlayerOneName = "Player 1";
+        public string PlayerTwoName = "Player 2";
+        public string PlayerThreeName = "Player 3";
+        public string PlayerFourName = "Player 4";
 
         private int PlayerCount;
 

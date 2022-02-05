@@ -42,21 +42,24 @@
             // 
             // tboxPlayerOneName
             // 
-            this.tboxPlayerOneName.BackColor = System.Drawing.Color.Gray;
+            this.tboxPlayerOneName.BackColor = System.Drawing.Color.Silver;
             this.tboxPlayerOneName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tboxPlayerOneName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tboxPlayerOneName.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tboxPlayerOneName.Location = new System.Drawing.Point(9, 9);
             this.tboxPlayerOneName.MaxLength = 16;
             this.tboxPlayerOneName.Name = "tboxPlayerOneName";
+            this.tboxPlayerOneName.PlaceholderText = "Player 1";
+            this.tboxPlayerOneName.ShortcutsEnabled = false;
             this.tboxPlayerOneName.Size = new System.Drawing.Size(193, 27);
             this.tboxPlayerOneName.TabIndex = 0;
-            this.tboxPlayerOneName.Text = "Player 1";
             this.tboxPlayerOneName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tboxPlayerOneName.TextChanged += new System.EventHandler(this.tboxPlayerOneName_TextChanged);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tboxGameTime);
@@ -118,43 +121,46 @@
             // 
             // tboxPlayerFourName
             // 
-            this.tboxPlayerFourName.BackColor = System.Drawing.Color.Gray;
+            this.tboxPlayerFourName.BackColor = System.Drawing.Color.Silver;
             this.tboxPlayerFourName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tboxPlayerFourName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tboxPlayerFourName.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tboxPlayerFourName.Location = new System.Drawing.Point(9, 108);
             this.tboxPlayerFourName.MaxLength = 16;
             this.tboxPlayerFourName.Name = "tboxPlayerFourName";
+            this.tboxPlayerFourName.PlaceholderText = "Player 4";
             this.tboxPlayerFourName.Size = new System.Drawing.Size(193, 27);
             this.tboxPlayerFourName.TabIndex = 3;
-            this.tboxPlayerFourName.Text = "Player 4";
             this.tboxPlayerFourName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tboxPlayerFourName.TextChanged += new System.EventHandler(this.tboxPlayerFourName_TextChanged);
             // 
             // tboxPlayerThreeName
             // 
-            this.tboxPlayerThreeName.BackColor = System.Drawing.Color.Gray;
+            this.tboxPlayerThreeName.BackColor = System.Drawing.Color.Silver;
             this.tboxPlayerThreeName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tboxPlayerThreeName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tboxPlayerThreeName.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tboxPlayerThreeName.Location = new System.Drawing.Point(9, 75);
             this.tboxPlayerThreeName.MaxLength = 16;
             this.tboxPlayerThreeName.Name = "tboxPlayerThreeName";
+            this.tboxPlayerThreeName.PlaceholderText = "Player 3";
             this.tboxPlayerThreeName.Size = new System.Drawing.Size(193, 27);
             this.tboxPlayerThreeName.TabIndex = 2;
-            this.tboxPlayerThreeName.Text = "Player 3";
             this.tboxPlayerThreeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tboxPlayerThreeName.TextChanged += new System.EventHandler(this.tboxPlayerThreeName_TextChanged);
             // 
             // tboxPlayerTwoName
             // 
-            this.tboxPlayerTwoName.BackColor = System.Drawing.Color.Gray;
+            this.tboxPlayerTwoName.BackColor = System.Drawing.Color.Silver;
             this.tboxPlayerTwoName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tboxPlayerTwoName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tboxPlayerTwoName.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tboxPlayerTwoName.Location = new System.Drawing.Point(9, 42);
             this.tboxPlayerTwoName.MaxLength = 16;
             this.tboxPlayerTwoName.Name = "tboxPlayerTwoName";
+            this.tboxPlayerTwoName.PlaceholderText = "Player 2";
             this.tboxPlayerTwoName.Size = new System.Drawing.Size(193, 27);
             this.tboxPlayerTwoName.TabIndex = 1;
-            this.tboxPlayerTwoName.Text = "Player 2";
             this.tboxPlayerTwoName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tboxPlayerTwoName.TextChanged += new System.EventHandler(this.tboxPlayerTwoName_TextChanged);
             // 
@@ -163,7 +169,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(231, 260);
+            this.ClientSize = new System.Drawing.Size(235, 263);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -172,6 +178,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Game setup";
             this.TopMost = true;
+            this.TransparencyKey = System.Drawing.Color.Cyan;
             this.Load += new System.EventHandler(this.FormGamePick_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
