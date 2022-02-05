@@ -204,7 +204,6 @@
             this.lblPlayerThreeName.TabIndex = 6;
             this.lblPlayerThreeName.Text = "Player 3";
             this.lblPlayerThreeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPlayerThreeName.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnPlayerThreeLife
             // 

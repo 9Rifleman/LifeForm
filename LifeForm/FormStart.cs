@@ -13,6 +13,7 @@ namespace LifeForm
         public int SoundsEnabled;               // vars required for the start form checkboxes
         public bool NamesEnabled = true;
         public bool TimerEnabled;
+        public int TimeSet;
 
         public string PlayerOneName = "";       // vars required for nameplates on the life screen 
         public string PlayerTwoName = "";
@@ -72,6 +73,7 @@ namespace LifeForm
             PlayerTwoName = gamepick.PlayerTwoName;
             PlayerThreeName = gamepick.PlayerThreeName;
             PlayerFourName = gamepick.PlayerFourName;
+            TimeSet = gamepick.TimeSet;
         }
 
         private void btnTwoPlayers_Click(object sender, EventArgs e)
@@ -79,7 +81,7 @@ namespace LifeForm
             PlayerNumber = 2;
             GameSetup();
             PlayerThemeSelect();
-            FormTwoPlayers formTwoPlayers = new FormTwoPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerOneName, PlayerTwoName);
+            FormTwoPlayers formTwoPlayers = new FormTwoPlayers(PlayerOneTheme, PlayerTwoTheme, PlayerOneName, PlayerTwoName, TimerEnabled, TimeSet);
             formTwoPlayers.ShowDialog();
             //this.Close();
         }
@@ -144,6 +146,22 @@ namespace LifeForm
                 case(false):
                     cboxNames.Checked = true;
                     NamesEnabled = true;
+                    break;
+            }
+        }
+
+        private void cboxTimer_Click(object sender, EventArgs e)
+        {
+            switch (TimerEnabled)
+            {
+                case (true):
+                    cboxTimer.Checked = false;
+                    TimerEnabled = false;
+                    break;
+
+                case (false):
+                    cboxTimer.Checked = true;
+                    TimerEnabled = true;
                     break;
             }
         }

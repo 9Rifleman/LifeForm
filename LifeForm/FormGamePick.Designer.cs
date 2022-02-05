@@ -97,18 +97,21 @@
             // 
             this.tboxGameTime.BackColor = System.Drawing.Color.Gray;
             this.tboxGameTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tboxGameTime.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tboxGameTime.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tboxGameTime.Location = new System.Drawing.Point(98, 141);
             this.tboxGameTime.MaxLength = 2;
             this.tboxGameTime.Name = "tboxGameTime";
+            this.tboxGameTime.PlaceholderText = "50";
             this.tboxGameTime.Size = new System.Drawing.Size(37, 27);
             this.tboxGameTime.TabIndex = 5;
-            this.tboxGameTime.Text = "50";
             this.tboxGameTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tboxGameTime.TextChanged += new System.EventHandler(this.tboxGameTime_TextChanged);
             // 
             // btnStartGame
             // 
             this.btnStartGame.BackColor = System.Drawing.Color.Gray;
+            this.btnStartGame.FlatAppearance.BorderSize = 3;
             this.btnStartGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStartGame.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnStartGame.Location = new System.Drawing.Point(43, 174);
@@ -168,8 +171,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(235, 263);
+            this.ClientSize = new System.Drawing.Size(230, 259);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -23,6 +23,8 @@ namespace LifeForm
 
         private bool TimerEnabled;
 
+        public int TimeSet;
+
         public FormGamePick(int playerCount,bool namesEnabled, bool timerEnabled)
         {
             PlayerCount = playerCount;
@@ -37,11 +39,14 @@ namespace LifeForm
             {
                 case 3:
                     tboxPlayerFourName.Enabled = false;
+                    tboxPlayerFourName.Visible = false;
                     break;
 
                 case 2:
                     tboxPlayerFourName.Enabled = false;
+                    tboxPlayerFourName.Visible = false;
                     tboxPlayerThreeName.Enabled = false;
+                    tboxPlayerThreeName.Visible = false;
                     break;
             }
 
@@ -56,6 +61,7 @@ namespace LifeForm
             if (TimerEnabled == true)
             {
                 tboxGameTime.Enabled = true;
+                TimeSet = 50;
             }
             else
             {
@@ -107,6 +113,11 @@ namespace LifeForm
         private void btnStartGame_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tboxGameTime_TextChanged(object sender, EventArgs e)
+        {
+            TimeSet = Convert.ToInt32(tboxGameTime.Text);
         }
     }
 }

@@ -49,6 +49,7 @@
             this.btnTwoPlayers.BackColor = System.Drawing.Color.Black;
             this.btnTwoPlayers.BackgroundImage = global::LifeForm.Properties.Resources.TwoPlayers;
             this.btnTwoPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTwoPlayers.FlatAppearance.BorderSize = 3;
             this.btnTwoPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTwoPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTwoPlayers.ForeColor = System.Drawing.Color.White;
@@ -64,6 +65,7 @@
             this.btnFourPlayers.BackColor = System.Drawing.Color.Black;
             this.btnFourPlayers.BackgroundImage = global::LifeForm.Properties.Resources.FourPlayers;
             this.btnFourPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFourPlayers.FlatAppearance.BorderSize = 3;
             this.btnFourPlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFourPlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnFourPlayers.ForeColor = System.Drawing.Color.White;
@@ -130,6 +132,7 @@
             this.btnThreePlayers.BackColor = System.Drawing.Color.Black;
             this.btnThreePlayers.BackgroundImage = global::LifeForm.Properties.Resources.ThreePlayers;
             this.btnThreePlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThreePlayers.FlatAppearance.BorderSize = 3;
             this.btnThreePlayers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThreePlayers.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThreePlayers.ForeColor = System.Drawing.Color.White;
@@ -166,6 +169,7 @@
             this.cboxTimer.Text = "Timer";
             this.cboxTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cboxTimer.UseVisualStyleBackColor = false;
+            this.cboxTimer.Click += new System.EventHandler(this.cboxTimer_Click);
             // 
             // cboxNames
             // 
@@ -219,7 +223,7 @@
             this.MaximizeBox = false;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LifeForm v0.6.0.102";
+            this.Text = "LifeForm v0.6.1.109";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Cyan;
             this.Load += new System.EventHandler(this.FormStart_Load);
