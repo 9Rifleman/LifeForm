@@ -60,47 +60,67 @@ namespace LifeForm
                     pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerOnePlus.ForeColor = Color.Black;
+                    btnPlayerOneMinus.ForeColor = Color.Black;
+                    btnPlayerOneLife.ForeColor = Color.Black;
+                    lblPlayerOneName.ForeColor = Color.Black;
+                    lblPlayerOneTotals.ForeColor = Color.Black;
                     break;
 
                 case 1:
                     pnlPlayerOne.BackColor = Color.Black;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
-                    lblPlayerOneTotals.ForeColor = Color.White;
-                    lblPlayerOneName.ForeColor = Color.White;
+                    lblPlayerOneTotals.ForeColor = Color.LightGray;
+                    lblPlayerOneName.ForeColor = Color.LightGray;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
-                    btnPlayerOnePlus.FlatAppearance.BorderColor = Color.White;
-                    btnPlayerOnePlus.ForeColor = Color.White;
+                    btnPlayerOnePlus.FlatAppearance.BorderColor = Color.LightGray;
+                    btnPlayerOnePlus.ForeColor = Color.LightGray;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
-                    btnPlayerOneMinus.FlatAppearance.BorderColor = Color.White;
-                    btnPlayerOneMinus.ForeColor = Color.White;
-                    btnPlayerOneLife.BackColor = Color.Black;
-                    btnPlayerOneLife.ForeColor = Color.White;
-                    btnPlayerOneLife.FlatAppearance.BorderColor = Color.White;
+                    btnPlayerOneMinus.FlatAppearance.BorderColor = Color.LightGray;
+                    btnPlayerOneMinus.ForeColor = Color.LightGray;
+                    //btnPlayerOneLife.BackColor = Color.Black;
+                    btnPlayerOneLife.ForeColor = Color.LightGray;
+                    btnPlayerOneLife.FlatAppearance.BorderColor = Color.LightGray;
                     break;
 
                 case 2:
-                    pnlPlayerOne.BackColor = Color.CornflowerBlue;
+                    pnlPlayerOne.BackColor = Color.MidnightBlue;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.BlueTheme;
                     pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerOnePlus.ForeColor = Color.MidnightBlue;
+                    btnPlayerOneMinus.ForeColor = Color.MidnightBlue;
+                    btnPlayerOneLife.ForeColor = Color.MidnightBlue;
+                    lblPlayerOneName.ForeColor = Color.LightBlue;
+                    lblPlayerOneTotals.ForeColor = Color.LightBlue;
                     break;
 
                 case 3:
-                    pnlPlayerOne.BackColor = Color.Tomato;
+                    pnlPlayerOne.BackColor = Color.LightSalmon;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.RedTheme;
                     pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerOnePlus.ForeColor = Color.LightSalmon;
+                    btnPlayerOneMinus.ForeColor = Color.LightSalmon;
+                    btnPlayerOneLife.ForeColor = Color.LightSalmon;
+                    lblPlayerOneName.ForeColor = Color.LightSalmon;
+                    lblPlayerOneTotals.ForeColor = Color.LightSalmon;
                     break;
 
                 case 4:
-                    pnlPlayerOne.BackColor = Color.ForestGreen;
+                    pnlPlayerOne.BackColor = Color.LightGreen;
                     pnlPlayerOne.BackgroundImage = Properties.Resources.GreenTheme;
                     pnlPlayerOne.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerOnePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerOneMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerOnePlus.ForeColor = Color.LightGreen;
+                    btnPlayerOneMinus.ForeColor = Color.LightGreen;
+                    btnPlayerOneLife.ForeColor = Color.LightGreen;
+                    lblPlayerOneName.ForeColor = Color.LightGreen;
+                    lblPlayerOneTotals.ForeColor = Color.LightGreen;
                     break;
 
             }
@@ -113,23 +133,28 @@ namespace LifeForm
                     pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerTwoPlus.ForeColor = Color.Black;
+                    btnPlayerTwoMinus.ForeColor = Color.Black;
+                    btnPlayerTwoLife.ForeColor = Color.Black;
+                    lblPlayerTwoName.ForeColor = Color.Black;
+                    lblPlayerThreeTotals.ForeColor = Color.Black;
                     break;
 
                 case 1:
                     pnlPlayerTwo.BackColor = Color.Black;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
-                    lblPlayerTwoTotals.ForeColor = Color.White;
-                    lblPlayerTwoName.ForeColor = Color.White;
+                    lblPlayerTwoTotals.ForeColor = Color.LightGray;
+                    lblPlayerTwoName.ForeColor = Color.LightGray;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
-                    btnPlayerTwoPlus.FlatAppearance.BorderColor = Color.White;
-                    btnPlayerTwoPlus.ForeColor = Color.White;
+                    btnPlayerTwoPlus.FlatAppearance.BorderColor = Color.LightGray;
+                    btnPlayerTwoPlus.ForeColor = Color.LightGray;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
-                    btnPlayerTwoMinus.FlatAppearance.BorderColor = Color.White;
-                    btnPlayerTwoMinus.ForeColor = Color.White;
-                    btnPlayerTwoLife.BackColor = Color.Black;
-                    btnPlayerTwoLife.ForeColor = Color.White;
-                    btnPlayerTwoLife.FlatAppearance.BorderColor = Color.White;
+                    btnPlayerTwoMinus.FlatAppearance.BorderColor = Color.LightGray;
+                    btnPlayerTwoMinus.ForeColor = Color.LightGray;
+                    //btnPlayerOneLife.BackColor = Color.Black;
+                    btnPlayerTwoLife.ForeColor = Color.LightGray;
+                    btnPlayerTwoLife.FlatAppearance.BorderColor = Color.LightGray;
                     break;
 
                 case 2:
@@ -138,22 +163,37 @@ namespace LifeForm
                     pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerTwoPlus.ForeColor = Color.MidnightBlue;
+                    btnPlayerTwoMinus.ForeColor = Color.MidnightBlue;
+                    btnPlayerTwoLife.ForeColor = Color.MidnightBlue;
+                    lblPlayerTwoName.ForeColor = Color.LightBlue;
+                    lblPlayerTwoTotals.ForeColor = Color.LightBlue;
                     break;
 
                 case 3:
-                    pnlPlayerTwo.BackColor = Color.Tomato;
+                    pnlPlayerTwo.BackColor = Color.LightSalmon;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.RedTheme;
                     pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerTwoPlus.ForeColor = Color.LightSalmon;
+                    btnPlayerTwoMinus.ForeColor = Color.LightSalmon;
+                    btnPlayerTwoLife.ForeColor = Color.LightSalmon;
+                    lblPlayerTwoName.ForeColor = Color.LightSalmon;
+                    lblPlayerTwoTotals.ForeColor = Color.LightSalmon;
                     break;
 
                 case 4:
-                    pnlPlayerTwo.BackColor = Color.ForestGreen;
+                    pnlPlayerTwo.BackColor = Color.LightGreen;
                     pnlPlayerTwo.BackgroundImage = Properties.Resources.GreenTheme;
                     pnlPlayerTwo.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerTwoPlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerTwoMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerTwoPlus.ForeColor = Color.LightGreen;
+                    btnPlayerTwoMinus.ForeColor = Color.LightGreen;
+                    btnPlayerTwoLife.ForeColor = Color.LightGreen;
+                    lblPlayerTwoName.ForeColor = Color.LightGreen;
+                    lblPlayerTwoTotals.ForeColor = Color.LightGreen;
                     break;
             }
 
@@ -165,23 +205,28 @@ namespace LifeForm
                     pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerThreePlus.ForeColor = Color.Black;
+                    btnPlayerThreeMinus.ForeColor = Color.Black;
+                    btnPlayerThreeLife.ForeColor = Color.Black;
+                    lblPlayerThreeName.ForeColor = Color.Black;
+                    lblPlayerThreeTotals.ForeColor = Color.Black;
                     break;
 
                 case 1:
                     pnlPlayerThree.BackColor = Color.Black;
                     pnlPlayerThree.BackgroundImage = Properties.Resources.BlackTheme;
                     pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
-                    lblPlayerThreeTotals.ForeColor = Color.White;
-                    lblPlayerThreeName.ForeColor = Color.White;
+                    lblPlayerThreeTotals.ForeColor = Color.LightGray;
+                    lblPlayerThreeName.ForeColor = Color.LightGray;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
-                    btnPlayerThreePlus.FlatAppearance.BorderColor = Color.White;
-                    btnPlayerThreePlus.ForeColor = Color.White;
+                    btnPlayerThreePlus.FlatAppearance.BorderColor = Color.LightGray;
+                    btnPlayerThreePlus.ForeColor = Color.LightGray;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
-                    btnPlayerThreeMinus.FlatAppearance.BorderColor = Color.White;
-                    btnPlayerThreeMinus.ForeColor = Color.White;
-                    btnPlayerThreeLife.BackColor = Color.Black;
-                    btnPlayerThreeLife.ForeColor = Color.White;
-                    btnPlayerThreeLife.FlatAppearance.BorderColor = Color.White;
+                    btnPlayerThreeMinus.FlatAppearance.BorderColor = Color.LightGray;
+                    btnPlayerThreeMinus.ForeColor = Color.LightGray;
+                    //btnPlayerThreeLife.BackColor = Color.Black;
+                    btnPlayerThreeLife.ForeColor = Color.LightGray;
+                    btnPlayerThreeLife.FlatAppearance.BorderColor = Color.LightGray;
                     break;
 
                 case 2:
@@ -190,6 +235,11 @@ namespace LifeForm
                     pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerThreePlus.ForeColor = Color.MidnightBlue;
+                    btnPlayerThreeMinus.ForeColor = Color.MidnightBlue;
+                    btnPlayerThreeLife.ForeColor = Color.MidnightBlue;
+                    lblPlayerThreeName.ForeColor = Color.LightBlue;
+                    lblPlayerThreeTotals.ForeColor = Color.LightBlue;
                     break;
 
                 case 3:
@@ -198,6 +248,11 @@ namespace LifeForm
                     pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerThreePlus.ForeColor = Color.LightSalmon;
+                    btnPlayerThreeMinus.ForeColor = Color.LightSalmon;
+                    btnPlayerThreeLife.ForeColor = Color.LightSalmon;
+                    lblPlayerThreeName.ForeColor = Color.LightSalmon;
+                    lblPlayerThreeTotals.ForeColor = Color.LightSalmon;
                     break;
 
                 case 4:
@@ -206,6 +261,11 @@ namespace LifeForm
                     pnlPlayerThree.BackgroundImageLayout = ImageLayout.Stretch;
                     btnPlayerThreePlus.FlatAppearance.MouseOverBackColor = Color.Green;
                     btnPlayerThreeMinus.FlatAppearance.MouseOverBackColor = Color.Red;
+                    btnPlayerThreePlus.ForeColor = Color.LightGreen;
+                    btnPlayerThreeMinus.ForeColor = Color.LightGreen;
+                    btnPlayerThreeLife.ForeColor = Color.LightGreen;
+                    lblPlayerThreeName.ForeColor = Color.LightGreen;
+                    lblPlayerThreeTotals.ForeColor = Color.LightGreen;
                     break;
 
             }

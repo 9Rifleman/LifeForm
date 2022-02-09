@@ -109,7 +109,7 @@
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.lblPlayerTwoName);
             this.panel2.Controls.Add(this.lblPlayerTwoTotals);
             this.panel2.Controls.Add(this.btnPlayerTwoLife);
@@ -122,32 +122,32 @@
             // 
             // lblPlayerTwoName
             // 
-            this.lblPlayerTwoName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerTwoName.Location = new System.Drawing.Point(52, 8);
+            this.lblPlayerTwoName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerTwoName.Location = new System.Drawing.Point(52, -4);
             this.lblPlayerTwoName.Name = "lblPlayerTwoName";
-            this.lblPlayerTwoName.Size = new System.Drawing.Size(89, 19);
+            this.lblPlayerTwoName.Size = new System.Drawing.Size(89, 26);
             this.lblPlayerTwoName.TabIndex = 5;
             this.lblPlayerTwoName.Text = "Player 2";
             this.lblPlayerTwoName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPlayerTwoTotals
             // 
-            this.lblPlayerTwoTotals.Font = new System.Drawing.Font("Bahnschrift Condensed", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerTwoTotals.Location = new System.Drawing.Point(3, 15);
+            this.lblPlayerTwoTotals.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerTwoTotals.Location = new System.Drawing.Point(4, 11);
             this.lblPlayerTwoTotals.Name = "lblPlayerTwoTotals";
-            this.lblPlayerTwoTotals.Size = new System.Drawing.Size(192, 79);
+            this.lblPlayerTwoTotals.Size = new System.Drawing.Size(192, 91);
             this.lblPlayerTwoTotals.TabIndex = 0;
             this.lblPlayerTwoTotals.Text = "0";
             this.lblPlayerTwoTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPlayerTwoLife
             // 
-            this.btnPlayerTwoLife.FlatAppearance.BorderSize = 3;
+            this.btnPlayerTwoLife.FlatAppearance.BorderSize = 0;
             this.btnPlayerTwoLife.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerTwoLife.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerTwoLife.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerTwoLife.Location = new System.Drawing.Point(36, 164);
             this.btnPlayerTwoLife.Name = "btnPlayerTwoLife";
-            this.btnPlayerTwoLife.Size = new System.Drawing.Size(126, 28);
+            this.btnPlayerTwoLife.Size = new System.Drawing.Size(126, 35);
             this.btnPlayerTwoLife.TabIndex = 7;
             this.btnPlayerTwoLife.TabStop = false;
             this.btnPlayerTwoLife.Text = "Life";
@@ -156,9 +156,9 @@
             // 
             // btnPlayerTwoMinus
             // 
-            this.btnPlayerTwoMinus.FlatAppearance.BorderSize = 3;
+            this.btnPlayerTwoMinus.FlatAppearance.BorderSize = 0;
             this.btnPlayerTwoMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerTwoMinus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerTwoMinus.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerTwoMinus.Location = new System.Drawing.Point(102, 98);
             this.btnPlayerTwoMinus.Name = "btnPlayerTwoMinus";
             this.btnPlayerTwoMinus.Size = new System.Drawing.Size(60, 60);
@@ -170,9 +170,9 @@
             // 
             // btnPlayerTwoPlus
             // 
-            this.btnPlayerTwoPlus.FlatAppearance.BorderSize = 3;
+            this.btnPlayerTwoPlus.FlatAppearance.BorderSize = 0;
             this.btnPlayerTwoPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerTwoPlus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerTwoPlus.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerTwoPlus.Location = new System.Drawing.Point(36, 98);
             this.btnPlayerTwoPlus.Name = "btnPlayerTwoPlus";
             this.btnPlayerTwoPlus.Size = new System.Drawing.Size(60, 60);
@@ -195,7 +195,7 @@
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.lblPlayerOneName);
             this.panel1.Controls.Add(this.btnPlayerOneLife);
             this.panel1.Controls.Add(this.btnPlayerOneMinus);
@@ -208,22 +208,22 @@
             // 
             // lblPlayerOneName
             // 
-            this.lblPlayerOneName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerOneName.Location = new System.Drawing.Point(52, 7);
+            this.lblPlayerOneName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerOneName.Location = new System.Drawing.Point(51, -5);
             this.lblPlayerOneName.Name = "lblPlayerOneName";
-            this.lblPlayerOneName.Size = new System.Drawing.Size(89, 19);
+            this.lblPlayerOneName.Size = new System.Drawing.Size(89, 27);
             this.lblPlayerOneName.TabIndex = 5;
             this.lblPlayerOneName.Text = "Player 1";
             this.lblPlayerOneName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPlayerOneLife
             // 
-            this.btnPlayerOneLife.FlatAppearance.BorderSize = 3;
+            this.btnPlayerOneLife.FlatAppearance.BorderSize = 0;
             this.btnPlayerOneLife.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerOneLife.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerOneLife.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerOneLife.Location = new System.Drawing.Point(36, 164);
             this.btnPlayerOneLife.Name = "btnPlayerOneLife";
-            this.btnPlayerOneLife.Size = new System.Drawing.Size(126, 28);
+            this.btnPlayerOneLife.Size = new System.Drawing.Size(126, 35);
             this.btnPlayerOneLife.TabIndex = 3;
             this.btnPlayerOneLife.TabStop = false;
             this.btnPlayerOneLife.Text = "Life";
@@ -232,9 +232,9 @@
             // 
             // btnPlayerOneMinus
             // 
-            this.btnPlayerOneMinus.FlatAppearance.BorderSize = 3;
+            this.btnPlayerOneMinus.FlatAppearance.BorderSize = 0;
             this.btnPlayerOneMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerOneMinus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerOneMinus.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerOneMinus.Location = new System.Drawing.Point(102, 98);
             this.btnPlayerOneMinus.Name = "btnPlayerOneMinus";
             this.btnPlayerOneMinus.Size = new System.Drawing.Size(60, 60);
@@ -246,9 +246,9 @@
             // 
             // btnPlayerOnePlus
             // 
-            this.btnPlayerOnePlus.FlatAppearance.BorderSize = 3;
+            this.btnPlayerOnePlus.FlatAppearance.BorderSize = 0;
             this.btnPlayerOnePlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerOnePlus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerOnePlus.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerOnePlus.Location = new System.Drawing.Point(36, 98);
             this.btnPlayerOnePlus.Name = "btnPlayerOnePlus";
             this.btnPlayerOnePlus.Size = new System.Drawing.Size(60, 60);
@@ -260,10 +260,10 @@
             // 
             // lblPlayerOneTotals
             // 
-            this.lblPlayerOneTotals.Font = new System.Drawing.Font("Bahnschrift Condensed", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerOneTotals.Location = new System.Drawing.Point(3, 15);
+            this.lblPlayerOneTotals.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerOneTotals.Location = new System.Drawing.Point(2, 13);
             this.lblPlayerOneTotals.Name = "lblPlayerOneTotals";
-            this.lblPlayerOneTotals.Size = new System.Drawing.Size(192, 80);
+            this.lblPlayerOneTotals.Size = new System.Drawing.Size(192, 91);
             this.lblPlayerOneTotals.TabIndex = 0;
             this.lblPlayerOneTotals.Text = "0";
             this.lblPlayerOneTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -281,7 +281,7 @@
             // 
             // panel5
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.lblPlayerThreeName);
             this.panel5.Controls.Add(this.lblPlayerThreeTotals);
             this.panel5.Controls.Add(this.btnPlayerThreeLife);
@@ -294,32 +294,32 @@
             // 
             // lblPlayerThreeName
             // 
-            this.lblPlayerThreeName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerThreeName.Location = new System.Drawing.Point(51, 8);
+            this.lblPlayerThreeName.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerThreeName.Location = new System.Drawing.Point(51, -5);
             this.lblPlayerThreeName.Name = "lblPlayerThreeName";
-            this.lblPlayerThreeName.Size = new System.Drawing.Size(89, 19);
+            this.lblPlayerThreeName.Size = new System.Drawing.Size(89, 27);
             this.lblPlayerThreeName.TabIndex = 8;
             this.lblPlayerThreeName.Text = "Player 3";
             this.lblPlayerThreeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPlayerThreeTotals
             // 
-            this.lblPlayerThreeTotals.Font = new System.Drawing.Font("Bahnschrift Condensed", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPlayerThreeTotals.Location = new System.Drawing.Point(-1, 15);
+            this.lblPlayerThreeTotals.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPlayerThreeTotals.Location = new System.Drawing.Point(3, 13);
             this.lblPlayerThreeTotals.Name = "lblPlayerThreeTotals";
-            this.lblPlayerThreeTotals.Size = new System.Drawing.Size(192, 80);
+            this.lblPlayerThreeTotals.Size = new System.Drawing.Size(192, 92);
             this.lblPlayerThreeTotals.TabIndex = 0;
             this.lblPlayerThreeTotals.Text = "0";
             this.lblPlayerThreeTotals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPlayerThreeLife
             // 
-            this.btnPlayerThreeLife.FlatAppearance.BorderSize = 3;
+            this.btnPlayerThreeLife.FlatAppearance.BorderSize = 0;
             this.btnPlayerThreeLife.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerThreeLife.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerThreeLife.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerThreeLife.Location = new System.Drawing.Point(36, 164);
             this.btnPlayerThreeLife.Name = "btnPlayerThreeLife";
-            this.btnPlayerThreeLife.Size = new System.Drawing.Size(126, 28);
+            this.btnPlayerThreeLife.Size = new System.Drawing.Size(126, 35);
             this.btnPlayerThreeLife.TabIndex = 7;
             this.btnPlayerThreeLife.TabStop = false;
             this.btnPlayerThreeLife.Text = "Life";
@@ -328,9 +328,9 @@
             // 
             // btnPlayerThreeMinus
             // 
-            this.btnPlayerThreeMinus.FlatAppearance.BorderSize = 3;
+            this.btnPlayerThreeMinus.FlatAppearance.BorderSize = 0;
             this.btnPlayerThreeMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerThreeMinus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerThreeMinus.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerThreeMinus.Location = new System.Drawing.Point(102, 98);
             this.btnPlayerThreeMinus.Name = "btnPlayerThreeMinus";
             this.btnPlayerThreeMinus.Size = new System.Drawing.Size(60, 60);
@@ -342,9 +342,9 @@
             // 
             // btnPlayerThreePlus
             // 
-            this.btnPlayerThreePlus.FlatAppearance.BorderSize = 3;
+            this.btnPlayerThreePlus.FlatAppearance.BorderSize = 0;
             this.btnPlayerThreePlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlayerThreePlus.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPlayerThreePlus.Font = new System.Drawing.Font("Bahnschrift", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPlayerThreePlus.Location = new System.Drawing.Point(36, 98);
             this.btnPlayerThreePlus.Name = "btnPlayerThreePlus";
             this.btnPlayerThreePlus.Size = new System.Drawing.Size(60, 60);
