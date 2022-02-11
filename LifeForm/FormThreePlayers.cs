@@ -514,5 +514,17 @@ namespace LifeForm
             TimeSet = TimeSetDefault;
             ThreePlayerGameSetup();
         }
+
+        private void btnCoinToss_Click(object sender, EventArgs e)
+        {
+            FormCoinToss toss = new FormCoinToss();
+            toss.ShowDialog();
+        }
+
+        private void btnDTwenty_Click(object sender, EventArgs e)
+        {
+            FormDTwenty dt = new();
+            dt.ShowDialog();
+        }
     }
 }

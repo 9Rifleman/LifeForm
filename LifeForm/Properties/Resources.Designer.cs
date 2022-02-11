@@ -121,6 +121,35 @@ namespace LifeForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Cointoss_Heads {
+            get {
+                object obj = ResourceManager.GetObject("Cointoss_Heads", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Cointoss_Tails {
+            get {
+                object obj = ResourceManager.GetObject("Cointoss_Tails", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream CointossFX {
+            get {
+                return ResourceManager.GetStream("CointossFX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap FourPlayers {
             get {
                 object obj = ResourceManager.GetObject("FourPlayers", resourceCulture);

@@ -46,6 +46,8 @@
             this.lblPlayerOneTotals = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnDTwenty = new System.Windows.Forms.Button();
+            this.btnCoinToss = new System.Windows.Forms.Button();
             this.btnPauseResume = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -261,6 +263,8 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.btnDTwenty);
+            this.panel4.Controls.Add(this.btnCoinToss);
             this.panel4.Controls.Add(this.btnPauseResume);
             this.panel4.Controls.Add(this.btnReset);
             this.panel4.Controls.Add(this.label3);
@@ -271,15 +275,45 @@
             this.panel4.Size = new System.Drawing.Size(436, 54);
             this.panel4.TabIndex = 3;
             // 
+            // btnDTwenty
+            // 
+            this.btnDTwenty.BackColor = System.Drawing.Color.Gray;
+            this.btnDTwenty.FlatAppearance.BorderSize = 3;
+            this.btnDTwenty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDTwenty.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDTwenty.Location = new System.Drawing.Point(62, 3);
+            this.btnDTwenty.Name = "btnDTwenty";
+            this.btnDTwenty.Size = new System.Drawing.Size(56, 46);
+            this.btnDTwenty.TabIndex = 5;
+            this.btnDTwenty.TabStop = false;
+            this.btnDTwenty.Text = "D20";
+            this.btnDTwenty.UseVisualStyleBackColor = false;
+            this.btnDTwenty.Click += new System.EventHandler(this.btnDTwenty_click);
+            // 
+            // btnCoinToss
+            // 
+            this.btnCoinToss.BackColor = System.Drawing.Color.Gray;
+            this.btnCoinToss.FlatAppearance.BorderSize = 3;
+            this.btnCoinToss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinToss.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCoinToss.Location = new System.Drawing.Point(3, 3);
+            this.btnCoinToss.Name = "btnCoinToss";
+            this.btnCoinToss.Size = new System.Drawing.Size(56, 46);
+            this.btnCoinToss.TabIndex = 4;
+            this.btnCoinToss.TabStop = false;
+            this.btnCoinToss.Text = "Coin";
+            this.btnCoinToss.UseVisualStyleBackColor = false;
+            this.btnCoinToss.Click += new System.EventHandler(this.btnCoinToss_Click);
+            // 
             // btnPauseResume
             // 
             this.btnPauseResume.BackColor = System.Drawing.Color.Gray;
             this.btnPauseResume.FlatAppearance.BorderSize = 3;
             this.btnPauseResume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPauseResume.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPauseResume.Location = new System.Drawing.Point(289, 3);
+            this.btnPauseResume.Location = new System.Drawing.Point(314, 3);
             this.btnPauseResume.Name = "btnPauseResume";
-            this.btnPauseResume.Size = new System.Drawing.Size(68, 46);
+            this.btnPauseResume.Size = new System.Drawing.Size(56, 46);
             this.btnPauseResume.TabIndex = 3;
             this.btnPauseResume.TabStop = false;
             this.btnPauseResume.Text = "Pause";
@@ -292,9 +326,9 @@
             this.btnReset.FlatAppearance.BorderSize = 3;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnReset.Location = new System.Drawing.Point(363, 3);
+            this.btnReset.Location = new System.Drawing.Point(376, 3);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(68, 46);
+            this.btnReset.Size = new System.Drawing.Size(55, 46);
             this.btnReset.TabIndex = 2;
             this.btnReset.TabStop = false;
             this.btnReset.Text = "Reset";
@@ -305,7 +339,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(120, 12);
+            this.label3.Location = new System.Drawing.Point(231, 12);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 25);
             this.label3.TabIndex = 1;
@@ -314,7 +348,7 @@
             // lblTimeLeft
             // 
             this.lblTimeLeft.Font = new System.Drawing.Font("Bahnschrift Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTimeLeft.Location = new System.Drawing.Point(97, 12);
+            this.lblTimeLeft.Location = new System.Drawing.Point(208, 12);
             this.lblTimeLeft.Name = "lblTimeLeft";
             this.lblTimeLeft.Size = new System.Drawing.Size(38, 30);
             this.lblTimeLeft.TabIndex = 0;
@@ -324,7 +358,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 12);
+            this.label1.Location = new System.Drawing.Point(124, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 0;
@@ -388,5 +422,7 @@
         private Label label3;
         private Button btnReset;
         private Button btnPauseResume;
+        private Button btnCoinToss;
+        private Button btnDTwenty;
     }
 }

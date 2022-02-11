@@ -66,6 +66,8 @@
             this.lblTimeLeft = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnCoinToss = new System.Windows.Forms.Button();
+            this.btnDTwenty = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlPlayerFour.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -455,6 +457,8 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.btnCoinToss);
+            this.panel6.Controls.Add(this.btnDTwenty);
             this.panel6.Controls.Add(this.btnPauseResume);
             this.panel6.Controls.Add(this.btnReset);
             this.panel6.Controls.Add(this.label3);
@@ -528,6 +532,36 @@
             // 
             this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnCoinToss
+            // 
+            this.btnCoinToss.BackColor = System.Drawing.Color.Gray;
+            this.btnCoinToss.FlatAppearance.BorderSize = 3;
+            this.btnCoinToss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCoinToss.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCoinToss.Location = new System.Drawing.Point(3, 3);
+            this.btnCoinToss.Name = "btnCoinToss";
+            this.btnCoinToss.Size = new System.Drawing.Size(68, 46);
+            this.btnCoinToss.TabIndex = 5;
+            this.btnCoinToss.TabStop = false;
+            this.btnCoinToss.Text = "Coin";
+            this.btnCoinToss.UseVisualStyleBackColor = false;
+            this.btnCoinToss.Click += new System.EventHandler(this.btnCoinToss_Click);
+            // 
+            // btnDTwenty
+            // 
+            this.btnDTwenty.BackColor = System.Drawing.Color.Gray;
+            this.btnDTwenty.FlatAppearance.BorderSize = 3;
+            this.btnDTwenty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDTwenty.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDTwenty.Location = new System.Drawing.Point(77, 3);
+            this.btnDTwenty.Name = "btnDTwenty";
+            this.btnDTwenty.Size = new System.Drawing.Size(68, 46);
+            this.btnDTwenty.TabIndex = 4;
+            this.btnDTwenty.TabStop = false;
+            this.btnDTwenty.Text = "D20";
+            this.btnDTwenty.UseVisualStyleBackColor = false;
+            this.btnDTwenty.Click += new System.EventHandler(this.btnDTwenty_Click);
             // 
             // FormFourPlayers
             // 
@@ -603,5 +637,7 @@
         private Label lblTimeLeft;
         private Label label1;
         private System.Windows.Forms.Timer timer1;
+        private Button btnCoinToss;
+        private Button btnDTwenty;
     }
 }

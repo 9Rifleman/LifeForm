@@ -4911,10 +4911,19 @@
         AElFTkSuQmCC
 </value>
   </data>
+  <data name="CointossFX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CointossHeadsFX.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cointoss_Heads" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cointoss_Heads.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cointoss_Tails" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cointoss_Tails.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FourPlayers" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAa8AAAGgCAYAAAAdPejUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAA/7JJREFUeF6U/WebK9l1pYvWz7nntJMo0RZZLL/93uktkEAmEmmRSO+9396U95as
+        vAAADrwBlbxySQAA/7JJREFUeF6U/WebK9l1pYvWz7nntJMo0RZZLL/93uktkEAmEmmRSO+9396U95as
         Krqi96QokRJFiTKtlmmZlrpb/XT3ub9i3fHOGROIzL2Lfe6H8YRFIBCIWO8ac8214qH5rZ10WnOb22l2
         Y8vE/BxTltc308zaRkP11fU0tbJmqq/k51215dU0OreYyhNTqacymroGq6l3eCwVRidTcWxS0wlpXPMT
         poHxyVSaqNn+5cmpNFirp0p9JlVn5kxj84tpcmk1jS8spREtD9Wm09DUtLbNaNuCprOpf2QsdZTKqaNc
@@ -17606,7 +17615,7 @@
   <data name="ThreePlayers" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAD9CAYAAABTCakVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAA/7JJREFUeF6k/WWXZGl6JYjmX5gPM9PqLpWKq5IzGDycmZmZmZmZmd0j3IOZmZkj
+        vAAADrwBlbxySQAA/7JJREFUeF6k/WWXZGl6JYjmX5gPM9PqLpWKq5IzGDycmZmZmZmZmd0j3IOZmZkj
         IyMzIxkrs0BqqVsaST1qWtN37bv3e+y4W0RlSbPu/fCsg2Z2zOzs/ez9vHBeCYrPQlBCNoIViTkITc4z
         oXXtD0rI4XoeQpLyub8AYSkFCE8tQkRaMdcLV9Yj00sQlVGK2OwKxOVUmmVMVjmiM8tWIiaT+7OqTGhd
         EZ1RsRIxmQprn87RMjLNel1Cfh0SCxuQVNSE9PJ2ZFZ2Iru6GxkVHY7tDrOdW9uL/Pp+FDQMoKBxCIVN
@@ -20471,7 +20480,7 @@
   <data name="TwoPlayers" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPUAAAD+CAYAAADidkOmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAA/7JJREFUeF6s/eWXbNl55QvXv3LvaNuSCg4lc2QGcwZzREZSJDPzYWaoU3WKTzGp
+        vAAADrwBlbxySQAA/7JJREFUeF6s/eWXbNl55QvXv3LvaNuSCg4lc2QGcwZzREZSJDPzYWaoU3WKTzGp
         RKUSWJJBYFsyy3ar23aT/bYbx+3bt/nOd861Y2dGHemO+354PzxjR+zYQXuv35rzWbSf6vPG0eOOonMg
         iPY+L7r6fGjv9qCrxw83XwtE84jnR5CuTCA3PI386Kx5XBqdwsziOrK5IfT2utDV6UC/wwuHw4eOLqf5
         nEi8gGJ1CpFUGcF4Ef7BAoZqixiaXEJ1ahnTq/uoLW4jzWNKkyvYPH8Xywc38a3f+8e4+fonmD1zD5Pb
